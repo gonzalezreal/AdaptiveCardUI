@@ -1,0 +1,23 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "Image",
+      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+L/xPwAFaAKx7ybCAwAAAABJRU5ErkJggg==",
+      "width": "20px"
+    },
+    {
+      "type": "Image",
+      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+L/xPwAFaAKx7ybCAwAAAABJRU5ErkJggg==",
+      "height": "60px"
+    },
+    {
+      "type": "Image",
+      "url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+L/xPwAFaAKx7ybCAwAAAABJRU5ErkJggg==",
+      "width": "60px",
+      "height": "20px"
+    }
+  ]
+}

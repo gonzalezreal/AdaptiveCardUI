@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9913B76B2514D5EC002C695C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7562514D5EC002C695C /* Assets.xcassets */; };
+		9913B76C2514D5EC002C695C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7562514D5EC002C695C /* Assets.xcassets */; };
+		9913B7822514D695002C695C /* ActivityUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7812514D695002C695C /* ActivityUpdate.json */; };
+		9913B7832514D695002C695C /* ActivityUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7812514D695002C695C /* ActivityUpdate.json */; };
+		9913B78A2514D6B5002C695C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7872514D6B5002C695C /* prism.js */; };
+		9913B78B2514D6B5002C695C /* prism.js in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7872514D6B5002C695C /* prism.js */; };
+		9913B78C2514D6B5002C695C /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7882514D6B5002C695C /* default.css */; };
+		9913B78D2514D6B5002C695C /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7882514D6B5002C695C /* default.css */; };
+		9913B78E2514D6B5002C695C /* okaidia.css in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7892514D6B5002C695C /* okaidia.css */; };
+		9913B78F2514D6B5002C695C /* okaidia.css in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7892514D6B5002C695C /* okaidia.css */; };
+		9913B7972514D6E3002C695C /* AdaptiveCardUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9913B7962514D6E3002C695C /* AdaptiveCardUI */; };
+		9913B7992514D6EC002C695C /* AdaptiveCardUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9913B7982514D6EC002C695C /* AdaptiveCardUI */; };
+		9913B79D2514D74A002C695C /* JSONView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B79C2514D74A002C695C /* JSONView.swift */; };
+		9913B7A12514D760002C695C /* JSONView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A02514D760002C695C /* JSONView.swift */; };
+		9913B7A92514D78A002C695C /* SampleCardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A42514D78A002C695C /* SampleCardPreview.swift */; };
+		9913B7AA2514D78A002C695C /* SampleCardPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A42514D78A002C695C /* SampleCardPreview.swift */; };
+		9913B7AB2514D78A002C695C /* SampleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A52514D78A002C695C /* SampleCardView.swift */; };
+		9913B7AC2514D78A002C695C /* SampleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A52514D78A002C695C /* SampleCardView.swift */; };
+		9913B7AD2514D78A002C695C /* SampleCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A62514D78A002C695C /* SampleCardList.swift */; };
+		9913B7AE2514D78A002C695C /* SampleCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A62514D78A002C695C /* SampleCardList.swift */; };
+		9913B7AF2514D78A002C695C /* JSONView+HTMLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A72514D78A002C695C /* JSONView+HTMLString.swift */; };
+		9913B7B02514D78A002C695C /* JSONView+HTMLString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A72514D78A002C695C /* JSONView+HTMLString.swift */; };
+		9913B7B12514D78A002C695C /* SampleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A82514D78A002C695C /* SampleCard.swift */; };
+		9913B7B22514D78A002C695C /* SampleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7A82514D78A002C695C /* SampleCard.swift */; };
+		9913B7BF2514D833002C695C /* AdaptiveCardVisualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7BE2514D833002C695C /* AdaptiveCardVisualizerApp.swift */; };
+		9913B7C02514D833002C695C /* AdaptiveCardVisualizerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7BE2514D833002C695C /* AdaptiveCardVisualizerApp.swift */; };
+		9913B7C62514DB18002C695C /* FlightItinerary.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7C52514DB18002C695C /* FlightItinerary.json */; };
+		9913B7C72514DB18002C695C /* FlightItinerary.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7C52514DB18002C695C /* FlightItinerary.json */; };
+		9913B7CB2514DB63002C695C /* FlightUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7CA2514DB63002C695C /* FlightUpdate.json */; };
+		9913B7CC2514DB63002C695C /* FlightUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7CA2514DB63002C695C /* FlightUpdate.json */; };
+		9913B7D02514DE6B002C695C /* SportingEvent.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7CF2514DE6B002C695C /* SportingEvent.json */; };
+		9913B7D12514DE6B002C695C /* SportingEvent.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7CF2514DE6B002C695C /* SportingEvent.json */; };
+		9913B7D52514E065002C695C /* StockUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7D42514E065002C695C /* StockUpdate.json */; };
+		9913B7D62514E065002C695C /* StockUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7D42514E065002C695C /* StockUpdate.json */; };
+		9913B7DA2514F18F002C695C /* WeatherCompact.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7D92514F18F002C695C /* WeatherCompact.json */; };
+		9913B7DB2514F18F002C695C /* WeatherCompact.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7D92514F18F002C695C /* WeatherCompact.json */; };
+		9913B7DF2514F458002C695C /* WeatherLarge.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7DE2514F458002C695C /* WeatherLarge.json */; };
+		9913B7E02514F458002C695C /* WeatherLarge.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7DE2514F458002C695C /* WeatherLarge.json */; };
+		9913B7EE2514F6A8002C695C /* FlightDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7ED2514F6A8002C695C /* FlightDetails.json */; };
+		9913B7EF2514F6A8002C695C /* FlightDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7ED2514F6A8002C695C /* FlightDetails.json */; };
+		9913B7F925150866002C695C /* RepoLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F525150866002C695C /* RepoLanguage.swift */; };
+		9913B7FA25150866002C695C /* RepoLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F525150866002C695C /* RepoLanguage.swift */; };
+		9913B7FB25150866002C695C /* StarCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F625150866002C695C /* StarCount.swift */; };
+		9913B7FC25150866002C695C /* StarCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F625150866002C695C /* StarCount.swift */; };
+		9913B7FD25150866002C695C /* StarCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F725150866002C695C /* StarCountView.swift */; };
+		9913B7FE25150866002C695C /* StarCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F725150866002C695C /* StarCountView.swift */; };
+		9913B7FF25150866002C695C /* RepoLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F825150866002C695C /* RepoLanguageView.swift */; };
+		9913B80025150866002C695C /* RepoLanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B7F825150866002C695C /* RepoLanguageView.swift */; };
+		9913B80425150C40002C695C /* RoundedImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B80325150C40002C695C /* RoundedImageStyle.swift */; };
+		9913B80525150C40002C695C /* RoundedImageStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9913B80325150C40002C695C /* RoundedImageStyle.swift */; };
+		9913B80B25150CFE002C695C /* GitHubRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B80A25150CFE002C695C /* GitHubRepository.json */; };
+		9913B80C25150CFE002C695C /* GitHubRepository.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B80A25150CFE002C695C /* GitHubRepository.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9913B7562514D5EC002C695C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9913B75B2514D5EC002C695C /* AdaptiveCardVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveCardVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9913B75E2514D5EC002C695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9913B7632514D5EC002C695C /* AdaptiveCardVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveCardVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9913B7652514D5EC002C695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9913B7662514D5EC002C695C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		9913B7812514D695002C695C /* ActivityUpdate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ActivityUpdate.json; sourceTree = "<group>"; };
+		9913B7872514D6B5002C695C /* prism.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = prism.js; sourceTree = "<group>"; };
+		9913B7882514D6B5002C695C /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		9913B7892514D6B5002C695C /* okaidia.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = okaidia.css; sourceTree = "<group>"; };
+		9913B7922514D6D5002C695C /* AdaptiveCardUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AdaptiveCardUI; path = ../..; sourceTree = "<group>"; };
+		9913B79C2514D74A002C695C /* JSONView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONView.swift; sourceTree = "<group>"; };
+		9913B7A02514D760002C695C /* JSONView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONView.swift; sourceTree = "<group>"; };
+		9913B7A42514D78A002C695C /* SampleCardPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardPreview.swift; sourceTree = "<group>"; };
+		9913B7A52514D78A002C695C /* SampleCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardView.swift; sourceTree = "<group>"; };
+		9913B7A62514D78A002C695C /* SampleCardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCardList.swift; sourceTree = "<group>"; };
+		9913B7A72514D78A002C695C /* JSONView+HTMLString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONView+HTMLString.swift"; sourceTree = "<group>"; };
+		9913B7A82514D78A002C695C /* SampleCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCard.swift; sourceTree = "<group>"; };
+		9913B7BE2514D833002C695C /* AdaptiveCardVisualizerApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdaptiveCardVisualizerApp.swift; sourceTree = "<group>"; };
+		9913B7C52514DB18002C695C /* FlightItinerary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlightItinerary.json; sourceTree = "<group>"; };
+		9913B7CA2514DB63002C695C /* FlightUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlightUpdate.json; sourceTree = "<group>"; };
+		9913B7CF2514DE6B002C695C /* SportingEvent.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SportingEvent.json; sourceTree = "<group>"; };
+		9913B7D42514E065002C695C /* StockUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = StockUpdate.json; sourceTree = "<group>"; };
+		9913B7D92514F18F002C695C /* WeatherCompact.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherCompact.json; sourceTree = "<group>"; };
+		9913B7DE2514F458002C695C /* WeatherLarge.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = WeatherLarge.json; sourceTree = "<group>"; };
+		9913B7ED2514F6A8002C695C /* FlightDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = FlightDetails.json; sourceTree = "<group>"; };
+		9913B7F525150866002C695C /* RepoLanguage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoLanguage.swift; sourceTree = "<group>"; };
+		9913B7F625150866002C695C /* StarCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarCount.swift; sourceTree = "<group>"; };
+		9913B7F725150866002C695C /* StarCountView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarCountView.swift; sourceTree = "<group>"; };
+		9913B7F825150866002C695C /* RepoLanguageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoLanguageView.swift; sourceTree = "<group>"; };
+		9913B80325150C40002C695C /* RoundedImageStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageStyle.swift; sourceTree = "<group>"; };
+		9913B80A25150CFE002C695C /* GitHubRepository.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GitHubRepository.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9913B7582514D5EC002C695C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913B7992514D6EC002C695C /* AdaptiveCardUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9913B7602514D5EC002C695C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913B7972514D6E3002C695C /* AdaptiveCardUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9913B74E2514D5EB002C695C = {
+			isa = PBXGroup;
+			children = (
+				9913B7922514D6D5002C695C /* AdaptiveCardUI */,
+				9913B7862514D6B5002C695C /* Prism */,
+				9913B7802514D695002C695C /* Cards */,
+				9913B7532514D5EB002C695C /* Shared */,
+				9913B75D2514D5EC002C695C /* iOS */,
+				9913B7642514D5EC002C695C /* macOS */,
+				9913B75C2514D5EC002C695C /* Products */,
+				9913B7952514D6E3002C695C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9913B7532514D5EB002C695C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				9913B7F425150866002C695C /* CustomCardElements */,
+				9913B7BE2514D833002C695C /* AdaptiveCardVisualizerApp.swift */,
+				9913B7A82514D78A002C695C /* SampleCard.swift */,
+				9913B7A62514D78A002C695C /* SampleCardList.swift */,
+				9913B7A42514D78A002C695C /* SampleCardPreview.swift */,
+				9913B80325150C40002C695C /* RoundedImageStyle.swift */,
+				9913B7A52514D78A002C695C /* SampleCardView.swift */,
+				9913B7A72514D78A002C695C /* JSONView+HTMLString.swift */,
+				9913B7562514D5EC002C695C /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		9913B75C2514D5EC002C695C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9913B75B2514D5EC002C695C /* AdaptiveCardVisualizer.app */,
+				9913B7632514D5EC002C695C /* AdaptiveCardVisualizer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9913B75D2514D5EC002C695C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9913B79C2514D74A002C695C /* JSONView.swift */,
+				9913B75E2514D5EC002C695C /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		9913B7642514D5EC002C695C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				9913B7A02514D760002C695C /* JSONView.swift */,
+				9913B7652514D5EC002C695C /* Info.plist */,
+				9913B7662514D5EC002C695C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		9913B7802514D695002C695C /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				9913B80A25150CFE002C695C /* GitHubRepository.json */,
+				9913B7812514D695002C695C /* ActivityUpdate.json */,
+				9913B7C52514DB18002C695C /* FlightItinerary.json */,
+				9913B7CA2514DB63002C695C /* FlightUpdate.json */,
+				9913B7CF2514DE6B002C695C /* SportingEvent.json */,
+				9913B7D42514E065002C695C /* StockUpdate.json */,
+				9913B7D92514F18F002C695C /* WeatherCompact.json */,
+				9913B7DE2514F458002C695C /* WeatherLarge.json */,
+				9913B7ED2514F6A8002C695C /* FlightDetails.json */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
+		9913B7862514D6B5002C695C /* Prism */ = {
+			isa = PBXGroup;
+			children = (
+				9913B7872514D6B5002C695C /* prism.js */,
+				9913B7882514D6B5002C695C /* default.css */,
+				9913B7892514D6B5002C695C /* okaidia.css */,
+			);
+			path = Prism;
+			sourceTree = "<group>";
+		};
+		9913B7952514D6E3002C695C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9913B7F425150866002C695C /* CustomCardElements */ = {
+			isa = PBXGroup;
+			children = (
+				9913B7F525150866002C695C /* RepoLanguage.swift */,
+				9913B7F625150866002C695C /* StarCount.swift */,
+				9913B7F725150866002C695C /* StarCountView.swift */,
+				9913B7F825150866002C695C /* RepoLanguageView.swift */,
+			);
+			name = CustomCardElements;
+			path = ../../../Tests/AdaptiveCardUITests/UI/CustomCardElements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9913B75A2514D5EC002C695C /* AdaptiveCardVisualizer (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9913B76F2514D5EC002C695C /* Build configuration list for PBXNativeTarget "AdaptiveCardVisualizer (iOS)" */;
+			buildPhases = (
+				9913B7572514D5EC002C695C /* Sources */,
+				9913B7582514D5EC002C695C /* Frameworks */,
+				9913B7592514D5EC002C695C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdaptiveCardVisualizer (iOS)";
+			packageProductDependencies = (
+				9913B7982514D6EC002C695C /* AdaptiveCardUI */,
+			);
+			productName = "AdaptiveCardVisualizer (iOS)";
+			productReference = 9913B75B2514D5EC002C695C /* AdaptiveCardVisualizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9913B7622514D5EC002C695C /* AdaptiveCardVisualizer (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9913B7722514D5EC002C695C /* Build configuration list for PBXNativeTarget "AdaptiveCardVisualizer (macOS)" */;
+			buildPhases = (
+				9913B75F2514D5EC002C695C /* Sources */,
+				9913B7602514D5EC002C695C /* Frameworks */,
+				9913B7612514D5EC002C695C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AdaptiveCardVisualizer (macOS)";
+			packageProductDependencies = (
+				9913B7962514D6E3002C695C /* AdaptiveCardUI */,
+			);
+			productName = "AdaptiveCardVisualizer (macOS)";
+			productReference = 9913B7632514D5EC002C695C /* AdaptiveCardVisualizer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9913B74F2514D5EB002C695C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					9913B75A2514D5EC002C695C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					9913B7622514D5EC002C695C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 9913B7522514D5EB002C695C /* Build configuration list for PBXProject "AdaptiveCardVisualizer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9913B74E2514D5EB002C695C;
+			productRefGroup = 9913B75C2514D5EC002C695C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9913B75A2514D5EC002C695C /* AdaptiveCardVisualizer (iOS) */,
+				9913B7622514D5EC002C695C /* AdaptiveCardVisualizer (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9913B7592514D5EC002C695C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913B76B2514D5EC002C695C /* Assets.xcassets in Resources */,
+				9913B7C62514DB18002C695C /* FlightItinerary.json in Resources */,
+				9913B7EE2514F6A8002C695C /* FlightDetails.json in Resources */,
+				9913B7DA2514F18F002C695C /* WeatherCompact.json in Resources */,
+				9913B7D02514DE6B002C695C /* SportingEvent.json in Resources */,
+				9913B78A2514D6B5002C695C /* prism.js in Resources */,
+				9913B7D52514E065002C695C /* StockUpdate.json in Resources */,
+				9913B7822514D695002C695C /* ActivityUpdate.json in Resources */,
+				9913B7DF2514F458002C695C /* WeatherLarge.json in Resources */,
+				9913B78E2514D6B5002C695C /* okaidia.css in Resources */,
+				9913B7CB2514DB63002C695C /* FlightUpdate.json in Resources */,
+				9913B78C2514D6B5002C695C /* default.css in Resources */,
+				9913B80B25150CFE002C695C /* GitHubRepository.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9913B7612514D5EC002C695C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913B76C2514D5EC002C695C /* Assets.xcassets in Resources */,
+				9913B7C72514DB18002C695C /* FlightItinerary.json in Resources */,
+				9913B7EF2514F6A8002C695C /* FlightDetails.json in Resources */,
+				9913B7DB2514F18F002C695C /* WeatherCompact.json in Resources */,
+				9913B7D12514DE6B002C695C /* SportingEvent.json in Resources */,
+				9913B78B2514D6B5002C695C /* prism.js in Resources */,
+				9913B7D62514E065002C695C /* StockUpdate.json in Resources */,
+				9913B7832514D695002C695C /* ActivityUpdate.json in Resources */,
+				9913B7E02514F458002C695C /* WeatherLarge.json in Resources */,
+				9913B78F2514D6B5002C695C /* okaidia.css in Resources */,
+				9913B7CC2514DB63002C695C /* FlightUpdate.json in Resources */,
+				9913B78D2514D6B5002C695C /* default.css in Resources */,
+				9913B80C25150CFE002C695C /* GitHubRepository.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9913B7572514D5EC002C695C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913B7FB25150866002C695C /* StarCount.swift in Sources */,
+				9913B7A92514D78A002C695C /* SampleCardPreview.swift in Sources */,
+				9913B7BF2514D833002C695C /* AdaptiveCardVisualizerApp.swift in Sources */,
+				9913B7AB2514D78A002C695C /* SampleCardView.swift in Sources */,
+				9913B7FD25150866002C695C /* StarCountView.swift in Sources */,
+				9913B7FF25150866002C695C /* RepoLanguageView.swift in Sources */,
+				9913B7AF2514D78A002C695C /* JSONView+HTMLString.swift in Sources */,
+				9913B79D2514D74A002C695C /* JSONView.swift in Sources */,
+				9913B7AD2514D78A002C695C /* SampleCardList.swift in Sources */,
+				9913B7B12514D78A002C695C /* SampleCard.swift in Sources */,
+				9913B7F925150866002C695C /* RepoLanguage.swift in Sources */,
+				9913B80425150C40002C695C /* RoundedImageStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9913B75F2514D5EC002C695C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9913B7FC25150866002C695C /* StarCount.swift in Sources */,
+				9913B7AA2514D78A002C695C /* SampleCardPreview.swift in Sources */,
+				9913B7C02514D833002C695C /* AdaptiveCardVisualizerApp.swift in Sources */,
+				9913B7AC2514D78A002C695C /* SampleCardView.swift in Sources */,
+				9913B7FE25150866002C695C /* StarCountView.swift in Sources */,
+				9913B80025150866002C695C /* RepoLanguageView.swift in Sources */,
+				9913B7B02514D78A002C695C /* JSONView+HTMLString.swift in Sources */,
+				9913B7A12514D760002C695C /* JSONView.swift in Sources */,
+				9913B7AE2514D78A002C695C /* SampleCardList.swift in Sources */,
+				9913B7B22514D78A002C695C /* SampleCard.swift in Sources */,
+				9913B7FA25150866002C695C /* RepoLanguage.swift in Sources */,
+				9913B80525150C40002C695C /* RoundedImageStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9913B76D2514D5EC002C695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9913B76E2514D5EC002C695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		9913B7702514D5EC002C695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5TF72MCE6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzalezreal.AdaptiveCardVisualizer;
+				PRODUCT_NAME = AdaptiveCardVisualizer;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9913B7712514D5EC002C695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T5TF72MCE6;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzalezreal.AdaptiveCardVisualizer;
+				PRODUCT_NAME = AdaptiveCardVisualizer;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9913B7732514D5EC002C695C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T5TF72MCE6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzalezreal.AdaptiveCardVisualizer;
+				PRODUCT_NAME = AdaptiveCardVisualizer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9913B7742514D5EC002C695C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T5TF72MCE6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonzalezreal.AdaptiveCardVisualizer;
+				PRODUCT_NAME = AdaptiveCardVisualizer;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9913B7522514D5EB002C695C /* Build configuration list for PBXProject "AdaptiveCardVisualizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9913B76D2514D5EC002C695C /* Debug */,
+				9913B76E2514D5EC002C695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9913B76F2514D5EC002C695C /* Build configuration list for PBXNativeTarget "AdaptiveCardVisualizer (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9913B7702514D5EC002C695C /* Debug */,
+				9913B7712514D5EC002C695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9913B7722514D5EC002C695C /* Build configuration list for PBXNativeTarget "AdaptiveCardVisualizer (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9913B7732514D5EC002C695C /* Debug */,
+				9913B7742514D5EC002C695C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9913B7962514D6E3002C695C /* AdaptiveCardUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdaptiveCardUI;
+		};
+		9913B7982514D6EC002C695C /* AdaptiveCardUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AdaptiveCardUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9913B74F2514D5EB002C695C /* Project object */;
+}

@@ -1,0 +1,50 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Swift",
+      "isSubtle": true,
+      "size": "medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Apple",
+      "weight": "bolder",
+      "size": "medium",
+      "spacing": "none"
+    },
+    {
+      "type": "TextBlock",
+      "text": "The Swift Programming Language"
+    },
+    {
+      "type": "ColumnSet",
+      "spacing": "small",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "StarCount",
+              "value": 53500
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "RepoLanguage",
+              "language": "C++",
+              "color": "#f34b7d"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

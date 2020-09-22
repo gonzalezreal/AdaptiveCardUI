@@ -1,0 +1,104 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "Container",
+      "minHeight": "100px",
+      "backgroundImage": {
+        "url": "https://raw.githubusercontent.com/Juanpe/SkeletonView/develop/Assets/header2.jpg",
+        "horizontalAlignment": "center"
+      },
+      "bleed": true
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://avatars3.githubusercontent.com/u/1409041?s=460&u=cf6a1ead5e8c9fb31852e60fbaf2cefc9377e82e&v=4",
+                  "size": "Small"
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Juanpe"
+                },
+                {
+                  "type": "TextBlock",
+                  "text": "SkeletonView",
+                  "spacing": "Small",
+                  "size": "Medium",
+                  "weight": "Bolder"
+                }
+              ]
+            }
+          ],
+          "spacing": "None"
+        },
+        {
+          "type": "TextBlock",
+          "text": "☠️ An elegant way to show users that something is happening and also prepare them to which contents they are awaiting.",
+          "wrap": true
+        },
+        {
+          "type": "ColumnSet",
+          "fallback": {
+            "type": "TextBlock",
+            "text": "✩ 9.5k · Swift"
+          },
+          "columns": [
+            {
+              "type": "Column",
+              "width": "auto",
+              "items": [
+                {
+                  "type": "StarCount",
+                  "value": 9500
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "RepoLanguage",
+                  "language": "Swift",
+                  "color": "#ffac45"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ActionSet",
+          "spacing": "Large",
+          "actions": [
+            {
+              "type": "Action.OpenUrl",
+              "title": "Open",
+              "url": "https://github.com/Juanpe/SkeletonView"
+            }
+          ]
+        }
+      ],
+      "style": "emphasis",
+      "spacing": "None",
+      "bleed": true
+    }
+  ]
+}

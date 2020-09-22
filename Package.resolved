@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "AnyValue",
+        "repositoryURL": "https://github.com/gonzalezreal/AnyValue",
+        "state": {
+          "branch": null,
+          "revision": "15a662df9f5bb6c7aa45839acb2137da99a22665",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "ff42ec9061d864de7982162011321d3df5080c10",
+          "version": "0.1.2"
+        }
+      },
+      {
+        "package": "DefaultCodable",
+        "repositoryURL": "https://github.com/gonzalezreal/DefaultCodable",
+        "state": {
+          "branch": null,
+          "revision": "7417376ad1228c3ac5c2988770c9fe97ca667a57",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "NetworkImage",
+        "repositoryURL": "https://github.com/gonzalezreal/NetworkImage",
+        "state": {
+          "branch": "development",
+          "revision": "dcdeead1c1767afd9a2311f237de9e04efc0812e",
+          "version": null
+        }
+      },
+      {
+        "package": "SnapshotTesting",
+        "repositoryURL": "https://github.com/pointfreeco/swift-snapshot-testing",
+        "state": {
+          "branch": null,
+          "revision": "c466812aa2e22898f27557e2e780d3aad7a27203",
+          "version": "1.8.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
