@@ -95,18 +95,6 @@
 
             assertSnapshot(matching: vc, as: .wait(for: 0.25, on: .image))
         }
-
-        func testDateAndTime() {
-            let view = AdaptiveCardView(url: fixtureURL("textBlockDateAndTime.json"))
-                .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
-                .environment(\.locale, Locale(identifier: "en_ES"))
-
-            let vc = UIHostingController(rootView: view)
-            vc.view.frame = CGRect(x: 0, y: 0, width: 375, height: 544)
-
-            assertSnapshot(matching: vc, as: .wait(for: 0.25, on: .image))
-        }
     }
 
 #endif

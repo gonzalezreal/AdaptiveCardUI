@@ -12,7 +12,6 @@
             let view = AdaptiveCardView(url: fixtureURL("richTextBlock.json"))
                 .animation(nil)
                 .adaptiveCardConfiguration(HostConfig())
-                .environment(\.locale, Locale(identifier: "en_US"))
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 375, height: 300)
