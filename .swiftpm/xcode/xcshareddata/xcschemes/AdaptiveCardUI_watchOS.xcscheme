@@ -14,20 +14,6 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AdaptiveCardUI_AdaptiveCardUI"
-               BuildableName = "AdaptiveCardUI_AdaptiveCardUI"
-               BlueprintName = "AdaptiveCardUI_AdaptiveCardUI"
-               ReferencedContainer = "container:">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "AdaptiveCardUI"
                BuildableName = "AdaptiveCardUI"
                BlueprintName = "AdaptiveCardUI"
@@ -64,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AdaptiveCardUI_AdaptiveCardUI"
-            BuildableName = "AdaptiveCardUI_AdaptiveCardUI"
-            BlueprintName = "AdaptiveCardUI_AdaptiveCardUI"
+            BlueprintIdentifier = "AdaptiveCardUI"
+            BuildableName = "AdaptiveCardUI"
+            BlueprintName = "AdaptiveCardUI"
             ReferencedContainer = "container:">
          </BuildableReference>
       </MacroExpansion>

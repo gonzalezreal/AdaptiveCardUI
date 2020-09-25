@@ -28,8 +28,8 @@
             self.backgroundColor = backgroundColor
         }
 
-        func makeBody(configuration: NetworkImageConfiguration) -> some View {
-            switch configuration {
+        func makeBody(state: NetworkImageState) -> some View {
+            switch state {
             case .loading, .failed:
                 EmptyView()
             case let .image(image, size):
