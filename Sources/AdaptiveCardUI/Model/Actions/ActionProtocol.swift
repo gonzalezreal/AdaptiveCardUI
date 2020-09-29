@@ -1,5 +1,6 @@
 import Foundation
 
+/// A type that represents a card action.
 public protocol ActionProtocol {
     /// Label for button or link that represents this action.
     var title: String { get }

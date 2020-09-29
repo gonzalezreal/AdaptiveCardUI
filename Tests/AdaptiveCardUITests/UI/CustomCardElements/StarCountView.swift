@@ -7,7 +7,7 @@
     struct StarCountView: View {
         @Environment(\.locale) private var locale
         @Environment(\.textStyle) private var textStyle
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
         @Environment(\.containerStyle) private var containerStyle
 
         private let starCount: StarCount
@@ -25,7 +25,7 @@
                         .imageScale(.small)
                 }
                 .font(textStyle.font(.default, size: .default))
-                .foregroundColor(colorStyle.textColor(.default, isSubtle: false, for: containerStyle))
+                .foregroundColor(containerColorStyle.textColor(.default, isSubtle: false, for: containerStyle))
             }
         }
 

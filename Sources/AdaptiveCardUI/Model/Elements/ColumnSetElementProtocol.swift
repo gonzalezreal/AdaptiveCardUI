@@ -1,5 +1,6 @@
 import Foundation
 
+/// A type that reperesents a column set element.
 public protocol ColumnSetElementProtocol {
     /// A unique identifier associated with the item.
     var id: String { get }

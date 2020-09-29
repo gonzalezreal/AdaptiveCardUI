@@ -1,12 +1,24 @@
 import AnyValue
 import Foundation
 
+/// A card action, represented with a button when rendered.
 @dynamicMemberLookup
 public indirect enum Action {
+    /// An action that opens a given URL.
     case openURL(OpenURLAction)
+
+    /// An action that shows an inline card.
     case showCard(ShowCardAction)
+
+    /// An action that gathers input fields, merges with an optional data field,
+    /// and sends it to the client for further processing.
     case submit(SubmitAction)
+
+    /// An action that toggles the visibility of associated card elements.
     case toggleVisibility(ToggleVisibilityAction)
+
+    /// An unknown action. Unknown actions are discarded or replaced by
+    /// their `fallback`, in case one is provided.
     case unknown(UnknownAction)
 }
 

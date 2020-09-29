@@ -1,6 +1,7 @@
 import DefaultCodable
 import Foundation
 
+/// The Adaptive Card schema version supported by the library.
 public let adaptiveCardVersion = SemanticVersion(major: 1, minor: 3)
 
 /// An Adaptive Card, containing a free-form body of card elements, and an optional set of actions.

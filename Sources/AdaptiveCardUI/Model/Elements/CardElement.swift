@@ -1,15 +1,34 @@
 import Foundation
 
+/// An element inside an Adaptive Card.
 @dynamicMemberLookup
 public indirect enum CardElement {
+    /// A text element.
     case textBlock(TextBlock)
+
+    /// An image element.
     case image(Image)
+
+    /// A rich text element.
     case richTextBlock(RichTextBlock)
+
+    /// A set of actions.
     case actionSet(ActionSet)
+
+    /// A collection of elements.
     case container(Container)
+
+    /// Divides a region into columns, allowing elements to sit side-by-side.
     case columnSet(ColumnSet)
+
+    /// A series of facts (i.e. name / value pairs) in a tabular form.
     case factSet(FactSet)
+
+    /// A custom card element.
     case custom(CustomCardElement)
+
+    /// An unknown card element. Unknown card elements are discarded or replaced
+    /// by their `fallback`, in case one is provided.
     case unknown(UnknownCardElement)
 }
 

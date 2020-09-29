@@ -3,6 +3,7 @@
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     public extension Color {
+        /// Creates a color from an RGB or an ARGB hexadecimal string.
         init?(argbHex: String?) {
             guard let argbHex = argbHex else {
                 return nil

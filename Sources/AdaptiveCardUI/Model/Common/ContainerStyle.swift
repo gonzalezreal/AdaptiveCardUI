@@ -1,5 +1,6 @@
 import Foundation
 
+/// The style for a container element.
 public struct ContainerStyle: Codable, Hashable, RawRepresentable {
     public private(set) var rawValue: String
 

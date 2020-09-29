@@ -10,16 +10,16 @@ public struct BackgroundImage: Codable, Equatable {
     public var fillMode: ImageFillMode
 
     /// Describes how the image should be aligned if it must be cropped or if using repeat fill mode.
-    public var horizontalAlignment: HorizontalAlignment
+    public var horizontalAlignment: HAlignment
 
     /// Describes how the image should be aligned if it must be cropped or if using repeat fill mode.
-    public var verticalAlignment: VerticalAlignment
+    public var verticalAlignment: VAlignment
 
     public init(
         url: URL,
         fillMode: ImageFillMode = .cover,
-        horizontalAlignment: HorizontalAlignment = .left,
-        verticalAlignment: VerticalAlignment = .top
+        horizontalAlignment: HAlignment = .left,
+        verticalAlignment: VAlignment = .top
     ) {
         self.url = url
         self.fillMode = fillMode
@@ -52,8 +52,8 @@ public struct BackgroundImage: Codable, Equatable {
 private struct PrimitiveBackgroundImage: Codable {
     var url: URL
     @Default<FirstCase> var fillMode: ImageFillMode
-    @Default<FirstCase> var horizontalAlignment: HorizontalAlignment
-    @Default<FirstCase> var verticalAlignment: VerticalAlignment
+    @Default<FirstCase> var horizontalAlignment: HAlignment
+    @Default<FirstCase> var verticalAlignment: VAlignment
 
     init(_ value: BackgroundImage) {
         url = value.url

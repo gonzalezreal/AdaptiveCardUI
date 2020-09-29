@@ -6,7 +6,7 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct RepoLanguageView: View {
         @Environment(\.textStyle) private var textStyle
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
         @Environment(\.containerStyle) private var containerStyle
 
         private let repoLanguage: RepoLanguage
@@ -20,7 +20,7 @@
                 Label {
                     Text(repoLanguage.language)
                         .foregroundColor(
-                            colorStyle.textColor(
+                            containerColorStyle.textColor(
                                 .default,
                                 isSubtle: false,
                                 for: containerStyle

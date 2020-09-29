@@ -19,7 +19,7 @@ struct StarCount: CustomCardElement, Codable, Equatable {
 
     // MARK: - StartCount
 
-    @Default<FirstCase> var horizontalAlignment: HorizontalAlignment
+    @Default<FirstCase> var horizontalAlignment: HAlignment
 
     var value: Int
 }

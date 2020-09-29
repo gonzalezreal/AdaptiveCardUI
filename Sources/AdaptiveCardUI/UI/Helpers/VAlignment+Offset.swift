@@ -3,7 +3,7 @@
     import SwiftUI
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    extension VerticalAlignment {
+    extension VAlignment {
         func offset(for proposedSize: CGSize, contentSize: CGSize) -> CGSize {
             switch self {
             case .center:

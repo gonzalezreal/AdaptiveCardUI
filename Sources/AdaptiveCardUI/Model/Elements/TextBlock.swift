@@ -32,7 +32,7 @@ public struct TextBlock: CardElementProtocol, Codable, Equatable {
     @Default<FirstCase> public var fontType: FontType
 
     /// Controls the horizontal text alignment.
-    @Default<FirstCase> public var horizontalAlignment: HorizontalAlignment
+    @Default<FirstCase> public var horizontalAlignment: HAlignment
 
     /// If `true`, displays text slightly toned down to appear less prominent.
     @Default<False> public var isSubtle: Bool
@@ -59,7 +59,7 @@ public struct TextBlock: CardElementProtocol, Codable, Equatable {
         text: String,
         color: TextColor = .default,
         fontType: FontType = .default,
-        horizontalAlignment: HorizontalAlignment = .left,
+        horizontalAlignment: HAlignment = .left,
         isSubtle: Bool = false,
         maxLines: Int? = nil,
         size: FontSize = .default,

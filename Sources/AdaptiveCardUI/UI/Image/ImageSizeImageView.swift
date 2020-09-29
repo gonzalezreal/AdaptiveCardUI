@@ -9,7 +9,7 @@
         private let image: SwiftUI.Image
         private let originalSize: CGSize
         private let size: ImageSize
-        private let horizontalAlignment: HorizontalAlignment
+        private let horizontalAlignment: HAlignment
         private let backgroundColor: Color?
         private let style: ImageStyle
 
@@ -17,7 +17,7 @@
             image: SwiftUI.Image,
             originalSize: CGSize,
             size: ImageSize,
-            horizontalAlignment: HorizontalAlignment,
+            horizontalAlignment: HAlignment,
             backgroundColor: Color?,
             style: ImageStyle
         ) {

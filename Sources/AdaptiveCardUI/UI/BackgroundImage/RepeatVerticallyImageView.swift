@@ -6,12 +6,12 @@
     struct RepeatVerticallyImageView: View {
         private let image: SwiftUI.Image
         private let size: CGSize
-        private let horizontalAlignment: HorizontalAlignment
+        private let horizontalAlignment: HAlignment
 
         init(
             image: SwiftUI.Image,
             size: CGSize,
-            horizontalAlignment: HorizontalAlignment
+            horizontalAlignment: HAlignment
         ) {
             self.image = image
             self.size = size

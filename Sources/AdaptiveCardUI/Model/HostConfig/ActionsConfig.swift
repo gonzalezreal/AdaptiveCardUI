@@ -1,6 +1,7 @@
 import DefaultCodable
 import Foundation
 
+/// Properties which control the rendering of actions.
 public struct ActionsConfig: Codable, Equatable {
     public enum Defaults {
         public static let buttonSpacing = 10
@@ -35,7 +36,7 @@ public struct ActionsConfig: Codable, Equatable {
     /// Controls overall spacing of action element.
     public var spacing: Spacing
 
-    /// Controls behavior and styling of `show` actions.
+    /// Controls behavior and styling of `showCard` actions.
     public var showCard: ShowCardConfig
 
     /// Controls where to place the action icon.

@@ -4,7 +4,7 @@
 
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct ContainerView: View {
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
         @Environment(\.spacingStyle) private var spacingStyle
         @Environment(\.containerStyle) private var parentContainerStyle
 
@@ -25,7 +25,7 @@
 
         private var backgroundColor: Color? {
             container.style.flatMap {
-                colorStyle.backgroundColor(for: $0)
+                containerColorStyle.backgroundColor(for: $0)
             }
         }
 

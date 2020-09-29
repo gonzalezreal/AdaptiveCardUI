@@ -5,7 +5,7 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct ColumnSetView: View {
         @Environment(\.spacingStyle) private var spacingStyle
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
         @Environment(\.containerStyle) private var parentContainerStyle
         @State private var stretchColumnWidths: [String: CGFloat] = [:]
         @State private var height: CGFloat?
@@ -37,7 +37,6 @@
                         height: columnHeight(bleed: first.item.bleed)
                     )
                     .padding(first.edges, first.length)
-                    .transition(.scale)
                 }
 
                 ForEach(items.dropFirst()) { paddedItem in
@@ -47,7 +46,6 @@
                         height: columnHeight(bleed: paddedItem.item.bleed)
                     )
                     .padding(paddedItem.edges, paddedItem.length)
-                    .transition(.scale)
                 }
             }
             .onCollectedSizesChange {
@@ -101,7 +99,7 @@
 
         var backgroundColor: Color? {
             columnSet.style.flatMap {
-                colorStyle.backgroundColor(for: $0)
+                containerColorStyle.backgroundColor(for: $0)
             }
         }
 

@@ -1,6 +1,8 @@
 import DefaultCodable
 import Foundation
 
+/// An unknown card element. Unknown card elements are discarded or replaced
+/// by their `fallback`, in case one is provided.
 public struct UnknownCardElement: CardElementProtocol, Codable, Equatable {
     /// A unique identifier associated with the item.
     @ItemIdentifier public var id: String

@@ -1,5 +1,6 @@
 import Foundation
 
+/// A type that represents a card element.
 public protocol CardElementProtocol {
     /// A unique identifier associated with the item.
     var id: String { get }

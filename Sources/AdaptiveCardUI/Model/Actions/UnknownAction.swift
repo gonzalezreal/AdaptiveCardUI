@@ -1,6 +1,7 @@
 import DefaultCodable
 import Foundation
 
+/// Represents an unknown action. Unknown actions are discarded or replaced by their `fallback`, in case one is provided.
 public struct UnknownAction: ActionProtocol, Codable, Equatable {
     /// Label for button or link that represents this action.
     @Default<Empty> public var title: String

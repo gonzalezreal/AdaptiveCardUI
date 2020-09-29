@@ -2,8 +2,13 @@ import DefaultCodable
 import Foundation
 
 public enum BlockElementHeight: Codable, Equatable {
+    /// The height of the element will be determined by the height of its contents.
     case auto
+
+    /// The element will stretch its height to the available remaining height of the parent container.
     case stretch
+
+    /// The fixed height for the element.
     case pixels(Int)
 
     public init(from decoder: Decoder) throws {

@@ -26,7 +26,7 @@ public struct RichTextBlock: CardElementProtocol, Codable, Equatable {
     public var inlines: [TextRun]
 
     /// Controls the horizontal text alignment.
-    @Default<FirstCase> public var horizontalAlignment: HorizontalAlignment
+    @Default<FirstCase> public var horizontalAlignment: HAlignment
 
     public init(
         id: String = "",
@@ -36,7 +36,7 @@ public struct RichTextBlock: CardElementProtocol, Codable, Equatable {
         fallback: Fallback<CardElement> = .none,
         requires: [String: SemanticVersion] = [:],
         inlines: [TextRun],
-        horizontalAlignment: HorizontalAlignment = .left
+        horizontalAlignment: HAlignment = .left
     ) {
         self.id = id
         self.isVisible = isVisible

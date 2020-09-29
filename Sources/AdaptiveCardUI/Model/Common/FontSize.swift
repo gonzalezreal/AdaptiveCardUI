@@ -1,5 +1,6 @@
 import Foundation
 
+/// Controls the relative size of text elements.
 public struct FontSize: Codable, Hashable, RawRepresentable {
     public private(set) var rawValue: String
 

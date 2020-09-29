@@ -1,5 +1,6 @@
 import Foundation
 
+/// Controls the weight of text elements.
 public struct FontWeight: Codable, Hashable, RawRepresentable {
     public private(set) var rawValue: String
 

@@ -6,7 +6,7 @@
     struct AutoImageView: View {
         private let image: SwiftUI.Image
         private let size: CGSize
-        private let horizontalAlignment: HorizontalAlignment
+        private let horizontalAlignment: HAlignment
         private let backgroundColor: Color?
         private let style: ImageStyle
 
@@ -15,7 +15,7 @@
         init(
             image: SwiftUI.Image,
             size: CGSize,
-            horizontalAlignment: HorizontalAlignment,
+            horizontalAlignment: HAlignment,
             backgroundColor: Color?,
             style: ImageStyle
         ) {

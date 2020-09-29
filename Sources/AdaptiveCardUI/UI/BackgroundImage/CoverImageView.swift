@@ -6,14 +6,14 @@
     struct CoverImageView: View {
         private let image: SwiftUI.Image
         private let aspectRatio: CGFloat
-        private let horizontalAlignment: HorizontalAlignment
-        private let verticalAlignment: VerticalAlignment
+        private let horizontalAlignment: HAlignment
+        private let verticalAlignment: VAlignment
 
         init(
             image: SwiftUI.Image,
             aspectRatio: CGFloat,
-            horizontalAlignment: HorizontalAlignment,
-            verticalAlignment: VerticalAlignment
+            horizontalAlignment: HAlignment,
+            verticalAlignment: VAlignment
         ) {
             self.image = image
             self.aspectRatio = aspectRatio

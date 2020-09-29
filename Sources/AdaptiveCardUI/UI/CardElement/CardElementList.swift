@@ -44,13 +44,11 @@
                     if let first = items.first {
                         CardElementView(first.item)
                             .padding(first.edges, first.length)
-                            .transition(.scale)
                     }
 
                     ForEach(items.dropFirst()) {
                         SpacingCardElementView($0.item)
                             .padding($0.edges, $0.length)
-                            .transition(.scale)
                     }
                 } else {
                     HStack {

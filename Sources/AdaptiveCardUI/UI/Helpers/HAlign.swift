@@ -2,13 +2,14 @@
 
     import SwiftUI
 
+    /// A view that aligns its content horizontally.
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     public struct HAlign<Content: View>: View {
-        private let horizontalAlignment: AdaptiveCardUI.HorizontalAlignment?
+        private let horizontalAlignment: HAlignment?
         private let content: Content
 
         public init(
-            _ horizontalAlignment: AdaptiveCardUI.HorizontalAlignment?,
+            _ horizontalAlignment: HAlignment?,
             @ViewBuilder content: () -> Content
         ) {
             self.horizontalAlignment = horizontalAlignment
@@ -18,14 +19,14 @@
         public var body: some View {
             HStack(spacing: 0) {
                 switch horizontalAlignment {
-                case HorizontalAlignment.left:
+                case HAlignment.left:
                     content
                     Spacer()
-                case HorizontalAlignment.center:
+                case HAlignment.center:
                     Spacer()
                     content
                     Spacer()
-                case HorizontalAlignment.right:
+                case HAlignment.right:
                     Spacer()
                     content
                 default:

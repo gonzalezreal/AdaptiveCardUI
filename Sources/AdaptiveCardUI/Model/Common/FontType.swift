@@ -1,5 +1,6 @@
 import Foundation
 
+/// The font type of text elements.
 public struct FontType: Codable, Hashable, RawRepresentable {
     public private(set) var rawValue: String
 

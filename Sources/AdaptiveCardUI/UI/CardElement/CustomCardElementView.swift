@@ -21,12 +21,12 @@
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     public extension View {
+        /// Sets the view that renders a custom card element within this view.
         func customCardElement<Element, Content>(
             _: Element.Type = Element.self,
             content: @escaping (Element) -> Content
-        ) -> some View where Element: Equatable, Element: Codable, Element: CustomCardElement, Content: View {
-            CardElement.register(Element.self)
-            return environment(
+        ) -> some View where Element: CustomCardElement, Content: View {
+            environment(
                 \.customCardElementViewFactories,
                 [Element.typeName: { AnyView(content($0 as! Element)) }]
             )

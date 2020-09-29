@@ -8,7 +8,7 @@
         private let width: CGFloat?
         private let height: CGFloat?
         private let size: ImageSize
-        private let horizontalAlignment: HorizontalAlignment
+        private let horizontalAlignment: HAlignment
         private let style: ImageStyle
         private let backgroundColor: Color?
 
@@ -16,7 +16,7 @@
             width: CGFloat?,
             height: CGFloat?,
             size: ImageSize,
-            horizontalAlignment: HorizontalAlignment,
+            horizontalAlignment: HAlignment,
             style: ImageStyle,
             backgroundColor: Color?
         ) {

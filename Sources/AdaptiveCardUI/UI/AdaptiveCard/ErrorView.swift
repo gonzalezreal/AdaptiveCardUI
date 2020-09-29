@@ -7,7 +7,7 @@
         @Environment(\.locale) private var locale
         @Environment(\.textStyle) private var textStyle
         @Environment(\.spacingStyle) private var spacingStyle
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
         @Environment(\.imageSizeStyle) private var imageSizeStyle
 
         private let text: String
@@ -23,7 +23,7 @@
                     .aspectRatio(contentMode: .fit)
                     .frame(width: imageSizeStyle.small)
                     .foregroundColor(
-                        colorStyle.textColor(
+                        containerColorStyle.textColor(
                             .default,
                             isSubtle: true,
                             for: .emphasis
@@ -32,7 +32,7 @@
                 Text(parsing: text, locale: locale)
                     .font(textStyle.font(.default, size: .default))
                     .foregroundColor(
-                        colorStyle.textColor(
+                        containerColorStyle.textColor(
                             .default,
                             isSubtle: true,
                             for: .emphasis
@@ -42,7 +42,7 @@
                     .fixedSize(horizontal: false, vertical: true)
             }
             .padding(spacingStyle.padding)
-            .background(colorStyle.backgroundColor(for: .emphasis))
+            .background(containerColorStyle.backgroundColor(for: .emphasis))
         }
     }
 

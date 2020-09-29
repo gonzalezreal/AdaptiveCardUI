@@ -1,6 +1,7 @@
 import DefaultCodable
 import Foundation
 
+/// The color palettes for the different container styles.
 public struct ContainerStylesConfig: Codable, Equatable {
     public enum DefaultPalette: DefaultValueProvider {
         public static let `default` = ContainerStyleConfig(
@@ -92,16 +93,22 @@ public struct ContainerStylesConfig: Codable, Equatable {
         )
     }
 
+    /// The color palette for the `default` container style.
     @Default<DefaultPalette> public var `default`: ContainerStyleConfig
 
+    /// The color palette for the `emphasis` container style.
     @Default<EmphasisPalette> public var emphasis: ContainerStyleConfig
 
+    /// The color palette for the `good` container style.
     @Default<GoodPalette> public var good: ContainerStyleConfig
 
+    /// The color palette for the `warning` container style.
     @Default<WarningPalette> public var warning: ContainerStyleConfig
 
+    /// The color palette for the `attention` container style.
     @Default<AttentionPalette> public var attention: ContainerStyleConfig
 
+    /// The color palette for the `accent` container style.
     @Default<AccentPalette> public var accent: ContainerStyleConfig
 
     public subscript(containerStyle: ContainerStyle) -> ContainerStyleConfig {

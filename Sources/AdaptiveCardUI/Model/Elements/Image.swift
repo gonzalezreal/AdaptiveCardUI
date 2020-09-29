@@ -35,7 +35,7 @@ public struct Image: CardElementProtocol, Codable, Equatable {
     @Default<BlockElementHeight> public var height: BlockElementHeight
 
     /// Controls how this element is horizontally positioned within its parent.
-    @Default<FirstCase> public var horizontalAlignment: HorizontalAlignment
+    @Default<FirstCase> public var horizontalAlignment: HAlignment
 
     /// An Action that will be invoked when the `Image` is tapped or selected.
     public var selectAction: Action?
@@ -60,7 +60,7 @@ public struct Image: CardElementProtocol, Codable, Equatable {
         altText: String? = nil,
         backgroundColor: String? = nil,
         height: BlockElementHeight = .default,
-        horizontalAlignment: HorizontalAlignment = .left,
+        horizontalAlignment: HAlignment = .left,
         selectAction: Action? = nil,
         size: ImageSize = .auto,
         style: ImageStyle = .default,

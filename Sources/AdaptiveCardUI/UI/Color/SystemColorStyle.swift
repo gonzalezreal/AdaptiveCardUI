@@ -3,7 +3,7 @@
     import SwiftUI
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
-    public struct SystemColorStyle: ColorStyle {
+    public struct SystemColorStyle: ContainerColorStyle {
         private enum Defaults {
             static let subtleOpacity = 0.5
         }

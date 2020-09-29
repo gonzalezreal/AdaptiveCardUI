@@ -22,8 +22,8 @@ struct SampleCardPreview: View {
                 .frame(maxWidth: Constants.maxCardWidth)
                 .padding()
                 .actionSetStyle(ActionSetStyle(orientation: .horizontal))
-                .customCardElement(StarCount.self) { StarCountView($0) }
-                .customCardElement(RepoLanguage.self) { RepoLanguageView($0) }
+                .customCardElement { StarCountView($0) }
+                .customCardElement { RepoLanguageView($0) }
                 .onImageStyle(.default, apply: RoundedImageStyle())
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(.default)

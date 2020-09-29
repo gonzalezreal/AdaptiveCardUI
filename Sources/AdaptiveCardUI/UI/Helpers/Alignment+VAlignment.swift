@@ -4,8 +4,8 @@
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     extension Alignment {
-        init(_ verticalContentAlignment: VerticalContentAlignment) {
-            switch verticalContentAlignment {
+        init(_ verticalAlignment: VAlignment) {
+            switch verticalAlignment {
             case .center:
                 self = .center
             case .bottom:

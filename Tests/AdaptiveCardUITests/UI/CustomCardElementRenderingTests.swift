@@ -8,11 +8,17 @@
 
     @available(iOS 14.0, *)
     final class CustomCardElementRenderingTests: XCTestCase {
+        override class func setUp() {
+            super.setUp()
+            CardElement.register(RepoLanguage.self)
+            CardElement.register(StarCount.self)
+        }
+
         func testCustomCardElements() {
             let view = AdaptiveCardView(url: fixtureURL("customCardElements.json"))
                 .animation(nil)
-                .customCardElement(RepoLanguage.self) { RepoLanguageView($0) }
-                .customCardElement(StarCount.self) { StarCountView($0) }
+                .customCardElement { RepoLanguageView($0) }
+                .customCardElement { StarCountView($0) }
                 .adaptiveCardConfiguration(HostConfig())
                 .environment(\.locale, Locale(identifier: "en_US"))
 

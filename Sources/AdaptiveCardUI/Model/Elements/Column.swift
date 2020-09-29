@@ -32,7 +32,7 @@ public struct Column: ColumnSetElementProtocol, Identifiable, Codable, Equatable
     public var style: ContainerStyle?
 
     /// Defines how the content should be aligned vertically within the column.
-    @Default<FirstCase> public var verticalContentAlignment: VerticalContentAlignment
+    @Default<FirstCase> public var verticalContentAlignment: VAlignment
 
     /// Determines whether the element should bleed through its parent's padding.
     @Default<False> public var bleed: Bool
@@ -56,7 +56,7 @@ public struct Column: ColumnSetElementProtocol, Identifiable, Codable, Equatable
         items: [CardElement],
         selectAction: Action? = nil,
         style: ContainerStyle? = nil,
-        verticalContentAlignment: VerticalContentAlignment = .top,
+        verticalContentAlignment: VAlignment = .top,
         bleed: Bool = false,
         backgroundImage: BackgroundImage? = nil,
         minHeight: PixelDimension? = nil,

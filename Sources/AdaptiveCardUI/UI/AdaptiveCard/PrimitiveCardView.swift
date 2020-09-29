@@ -8,7 +8,7 @@
         @Environment(\.spacingStyle) private var spacingStyle
         @Environment(\.actionSetStyle) private var actionSetStyle
         @Environment(\.containerStyle) private var containerStyle
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
 
         private var adaptiveCard: AdaptiveCard
 
@@ -38,7 +38,7 @@
             }
             .frame(minHeight: adaptiveCard.minHeight?.cgFloatValue, alignment: .top)
             .backgroundImage(adaptiveCard.backgroundImage)
-            .background(colorStyle.backgroundColor(for: containerStyle))
+            .background(containerColorStyle.backgroundColor(for: containerStyle))
             .selectAction(adaptiveCard.selectAction)
             .environment(\.locale, locale.updatingLanguageCode(adaptiveCard.lang))
         }

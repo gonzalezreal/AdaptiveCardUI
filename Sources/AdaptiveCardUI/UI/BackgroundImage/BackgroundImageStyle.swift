@@ -6,13 +6,13 @@
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)
     struct BackgroundImageStyle: NetworkImageStyle {
         private let fillMode: ImageFillMode
-        private let horizontalAlignment: HorizontalAlignment
-        private let verticalAlignment: VerticalAlignment
+        private let horizontalAlignment: HAlignment
+        private let verticalAlignment: VAlignment
 
         init(
             fillMode: ImageFillMode,
-            horizontalAlignment: HorizontalAlignment,
-            verticalAlignment: VerticalAlignment
+            horizontalAlignment: HAlignment,
+            verticalAlignment: VAlignment
         ) {
             self.fillMode = fillMode
             self.horizontalAlignment = horizontalAlignment

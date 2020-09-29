@@ -8,7 +8,7 @@
         private let aspectRatio: CGFloat
         private let width: CGFloat?
         private let height: CGFloat?
-        private let horizontalAlignment: HorizontalAlignment
+        private let horizontalAlignment: HAlignment
         private let backgroundColor: Color?
         private let style: ImageStyle
 
@@ -20,7 +20,7 @@
             aspectRatio: CGFloat,
             width: CGFloat?,
             height: CGFloat?,
-            horizontalAlignment: HorizontalAlignment,
+            horizontalAlignment: HAlignment,
             backgroundColor: Color?,
             style: ImageStyle
         ) {

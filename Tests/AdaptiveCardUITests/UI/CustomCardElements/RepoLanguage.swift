@@ -19,7 +19,7 @@ struct RepoLanguage: CustomCardElement, Codable, Equatable {
 
     // MARK: - RepoLanguage
 
-    @Default<FirstCase> var horizontalAlignment: HorizontalAlignment
+    @Default<FirstCase> var horizontalAlignment: HAlignment
 
     var language: String
 

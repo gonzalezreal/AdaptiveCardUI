@@ -1,6 +1,8 @@
 import DefaultCodable
 import Foundation
 
+/// An unknown column set element. Unknown column set elements are discarded or replaced by their `fallback`,
+/// in case one is provided.
 public struct UnknownColumnSetElement: ColumnSetElementProtocol, Codable, Equatable {
     /// A unique identifier associated with the item.
     @ItemIdentifier public var id: String

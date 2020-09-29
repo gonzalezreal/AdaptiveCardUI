@@ -1,8 +1,12 @@
 import Foundation
 
+/// An element inside a column set.
 @dynamicMemberLookup
 public indirect enum ColumnSetElement {
+    /// A column element.
     case column(Column)
+
+    /// An unknown column set element.
     case unknown(UnknownColumnSetElement)
 }
 

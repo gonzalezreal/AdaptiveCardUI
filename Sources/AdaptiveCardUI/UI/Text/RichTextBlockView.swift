@@ -6,7 +6,7 @@
     struct RichTextBlockView: View {
         @Environment(\.locale) private var locale
         @Environment(\.textStyle) private var textStyle
-        @Environment(\.colorStyle) private var colorStyle
+        @Environment(\.containerColorStyle) private var containerColorStyle
         @Environment(\.containerStyle) private var containerStyle
 
         private let richTextBlock: RichTextBlock
@@ -31,7 +31,7 @@
                 .font(textStyle.font(textRun.fontType, size: textRun.size))
                 .fontWeight(Font.Weight(textRun.weight))
                 .foregroundColor(
-                    colorStyle.textColor(
+                    containerColorStyle.textColor(
                         textRun.color,
                         isSubtle: textRun.isSubtle,
                         for: containerStyle
