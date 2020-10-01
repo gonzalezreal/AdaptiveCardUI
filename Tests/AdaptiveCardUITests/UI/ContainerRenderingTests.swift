@@ -11,7 +11,7 @@
         func testStyle() {
             let view = AdaptiveCardView(url: fixtureURL("containerStyle.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 340, height: 840)
@@ -22,7 +22,7 @@
         func testBleed() {
             let view = AdaptiveCardView(url: fixtureURL("containerBleed.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 350)
@@ -33,7 +33,7 @@
         func testVerticalContentAlignment() {
             let view = AdaptiveCardView(url: fixtureURL("containerVerticalContentAlignment.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 340, height: 415)
@@ -44,7 +44,7 @@
         func testBackgroundImage() {
             let view = AdaptiveCardView(url: fixtureURL("containerBackgroundImage.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 600)
@@ -55,7 +55,7 @@
         func testMinHeight() {
             let view = AdaptiveCardView(url: fixtureURL("containerMinHeight.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 200)

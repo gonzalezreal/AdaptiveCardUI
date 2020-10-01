@@ -4,7 +4,7 @@
 
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct SpacingColumnView: View {
-        @Environment(\.spacingStyle) private var spacingStyle
+        @Environment(\.spacingConfiguration) private var spacingConfiguration
 
         private let column: Column
         private let minWidth: CGFloat?
@@ -20,11 +20,11 @@
             HStack(spacing: 0) {
                 if column.separator {
                     Divider()
-                        .padding(.horizontal, spacingStyle[column.spacing] * 0.5)
+                        .padding(.horizontal, spacingConfiguration[column.spacing] * 0.5)
                     ColumnView(column: column, minWidth: minWidth, height: height)
                 } else {
                     ColumnView(column: column, minWidth: minWidth, height: height)
-                        .padding(.leading, spacingStyle[column.spacing])
+                        .padding(.leading, spacingConfiguration[column.spacing])
                 }
             }
         }

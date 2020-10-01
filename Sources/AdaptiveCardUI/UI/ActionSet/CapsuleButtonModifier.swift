@@ -10,7 +10,7 @@
             static let pressedOpacity = 0.8
         }
 
-        @Environment(\.actionSetStyle) private var actionSetStyle
+        @Environment(\.actionSetConfiguration) private var actionSetConfiguration
 
         private let isPressed: Bool
 
@@ -25,7 +25,7 @@
                 .foregroundColor(.white)
                 .padding(Defaults.contentInsets)
                 .frame(
-                    maxWidth: actionSetStyle.maxButtonWidth,
+                    maxWidth: actionSetConfiguration.actionAlignment == .stretch ? .infinity : nil,
                     minHeight: Defaults.minHeight
                 )
                 .background(

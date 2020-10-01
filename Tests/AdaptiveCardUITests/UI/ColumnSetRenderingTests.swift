@@ -11,7 +11,7 @@
         func testBackgroundImage() {
             let view = AdaptiveCardView(url: fixtureURL("columnSetBackgroundImage.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 400, height: 200)
@@ -22,7 +22,7 @@
         func testBleed() {
             let view = AdaptiveCardView(url: fixtureURL("columnSetBleed.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 400, height: 500)
@@ -33,7 +33,7 @@
         func testMinHeight() {
             let view = AdaptiveCardView(url: fixtureURL("columnSetMinHeight.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
@@ -44,7 +44,7 @@
         func testStyle() {
             let view = AdaptiveCardView(url: fixtureURL("columnSetStyle.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 500, height: 200)
@@ -55,7 +55,7 @@
         func testWidth() {
             let view = AdaptiveCardView(url: fixtureURL("columnSetWidth.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 400, height: 200)
@@ -66,7 +66,7 @@
         func testVerticalContentAlignment() {
             let view = AdaptiveCardView(url: fixtureURL("columnSetVerticalContentAlignment.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 500, height: 200)

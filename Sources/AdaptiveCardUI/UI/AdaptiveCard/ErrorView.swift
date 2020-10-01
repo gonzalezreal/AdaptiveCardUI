@@ -5,10 +5,10 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct ErrorView: View {
         @Environment(\.locale) private var locale
-        @Environment(\.textStyle) private var textStyle
-        @Environment(\.spacingStyle) private var spacingStyle
-        @Environment(\.containerColorStyle) private var containerColorStyle
-        @Environment(\.imageSizeStyle) private var imageSizeStyle
+        @Environment(\.fontTypeConfiguration) private var fontTypeConfiguration
+        @Environment(\.spacingConfiguration) private var spacingConfiguration
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
+        @Environment(\.imageSizeConfiguration) private var imageSizeConfiguration
 
         private let text: String
 
@@ -17,32 +17,22 @@
         }
 
         var body: some View {
-            VStack(spacing: spacingStyle.medium) {
+            VStack(spacing: spacingConfiguration.medium) {
                 SwiftUI.Image(systemName: "rectangle.badge.xmark")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: imageSizeStyle.small)
-                    .foregroundColor(
-                        containerColorStyle.textColor(
-                            .default,
-                            isSubtle: true,
-                            for: .emphasis
-                        )
-                    )
+                    .frame(width: imageSizeConfiguration.small)
+                    .foregroundColor(containerStyleConfiguration.emphasis.textColors.default.subtle)
                 Text(parsing: text, locale: locale)
-                    .font(textStyle.font(.default, size: .default))
+                    .font(fontTypeConfiguration.default.default)
                     .foregroundColor(
-                        containerColorStyle.textColor(
-                            .default,
-                            isSubtle: true,
-                            for: .emphasis
-                        )
+                        containerStyleConfiguration.emphasis.textColors.default.subtle
                     )
                     .multilineTextAlignment(.center)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            .padding(spacingStyle.padding)
-            .background(containerColorStyle.backgroundColor(for: .emphasis))
+            .padding(spacingConfiguration.padding)
+            .background(containerStyleConfiguration.emphasis.backgroundColor)
         }
     }
 

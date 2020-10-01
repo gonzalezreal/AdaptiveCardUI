@@ -6,8 +6,8 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct StarCountView: View {
         @Environment(\.locale) private var locale
-        @Environment(\.textStyle) private var textStyle
-        @Environment(\.containerColorStyle) private var containerColorStyle
+        @Environment(\.fontTypeConfiguration) private var fontTypeConfiguration
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
         @Environment(\.containerStyle) private var containerStyle
 
         private let starCount: StarCount
@@ -24,8 +24,10 @@
                     Image(systemName: "star")
                         .imageScale(.small)
                 }
-                .font(textStyle.font(.default, size: .default))
-                .foregroundColor(containerColorStyle.textColor(.default, isSubtle: false, for: containerStyle))
+                .font(fontTypeConfiguration.default.default)
+                .foregroundColor(
+                    containerStyleConfiguration[containerStyle].textColors.default.default
+                )
             }
         }
 

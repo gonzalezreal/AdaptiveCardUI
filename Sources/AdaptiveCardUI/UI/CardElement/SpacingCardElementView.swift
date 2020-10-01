@@ -4,7 +4,7 @@
 
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct SpacingCardElementView: View {
-        @Environment(\.spacingStyle) private var spacingStyle
+        @Environment(\.spacingConfiguration) private var spacingConfiguration
 
         private let cardElement: CardElement
 
@@ -16,11 +16,11 @@
             VStack(spacing: 0) {
                 if cardElement.separator {
                     Divider()
-                        .padding(.vertical, spacingStyle[cardElement.spacing] * 0.5)
+                        .padding(.vertical, spacingConfiguration[cardElement.spacing] * 0.5)
                     CardElementView(cardElement)
                 } else {
                     CardElementView(cardElement)
-                        .padding(.top, spacingStyle[cardElement.spacing])
+                        .padding(.top, spacingConfiguration[cardElement.spacing])
                 }
             }
         }

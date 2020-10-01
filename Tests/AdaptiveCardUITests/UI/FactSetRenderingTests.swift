@@ -11,7 +11,7 @@
         func testFactSet() {
             let view = AdaptiveCardView(url: fixtureURL("factSet.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 400, height: 200)

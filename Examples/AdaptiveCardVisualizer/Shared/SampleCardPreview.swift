@@ -21,7 +21,7 @@ struct SampleCardPreview: View {
                 )
                 .frame(maxWidth: Constants.maxCardWidth)
                 .padding()
-                .actionSetStyle(ActionSetStyle(orientation: .horizontal))
+                .actionSetConfiguration(ActionSetConfiguration(actionsOrientation: .horizontal))
                 .customCardElement { StarCountView($0) }
                 .customCardElement { RepoLanguageView($0) }
                 .onImageStyle(.default, apply: RoundedImageStyle())

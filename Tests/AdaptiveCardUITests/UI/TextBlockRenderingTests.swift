@@ -11,7 +11,7 @@
         func testColor() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockColor.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -22,7 +22,7 @@
         func testFontType() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockFontType.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
@@ -33,7 +33,7 @@
         func testHorizontalAlignment() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockHorizontalAlignment.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
@@ -44,7 +44,7 @@
         func testIsSubtle() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockIsSubtle.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -55,7 +55,7 @@
         func testMaxLines() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockMaxLines.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 200)
@@ -66,7 +66,7 @@
         func testSize() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockSize.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 300)
@@ -77,7 +77,7 @@
         func testWeight() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockWeight.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -88,7 +88,7 @@
         func testWrap() {
             let view = AdaptiveCardView(url: fixtureURL("textBlockWrap.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 300, height: 400)

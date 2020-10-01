@@ -5,8 +5,8 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct RichTextBlockView: View {
         @Environment(\.locale) private var locale
-        @Environment(\.textStyle) private var textStyle
-        @Environment(\.containerColorStyle) private var containerColorStyle
+        @Environment(\.fontTypeConfiguration) private var fontTypeConfiguration
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
         @Environment(\.containerStyle) private var containerStyle
 
         private let richTextBlock: RichTextBlock
@@ -28,14 +28,10 @@
 
         private func text(for textRun: TextRun) -> Text {
             let result = Text(parsing: textRun.text, locale: locale)
-                .font(textStyle.font(textRun.fontType, size: textRun.size))
+                .font(fontTypeConfiguration[textRun.fontType][textRun.size])
                 .fontWeight(Font.Weight(textRun.weight))
                 .foregroundColor(
-                    containerColorStyle.textColor(
-                        textRun.color,
-                        isSubtle: textRun.isSubtle,
-                        for: containerStyle
-                    )
+                    containerStyleConfiguration[containerStyle].textColors[textRun.color, textRun.isSubtle]
                 )
                 .strikethrough(textRun.strikethrough)
 

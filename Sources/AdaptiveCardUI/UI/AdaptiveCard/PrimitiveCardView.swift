@@ -5,10 +5,10 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct PrimitiveCardView: View {
         @Environment(\.locale) private var locale
-        @Environment(\.spacingStyle) private var spacingStyle
-        @Environment(\.actionSetStyle) private var actionSetStyle
+        @Environment(\.spacingConfiguration) private var spacingConfiguration
+        @Environment(\.actionSetConfiguration) private var actionSetConfiguration
         @Environment(\.containerStyle) private var containerStyle
-        @Environment(\.containerColorStyle) private var containerColorStyle
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
 
         private var adaptiveCard: AdaptiveCard
 
@@ -18,7 +18,7 @@
                 : .actionSet(
                     ActionSet(
                         id: "AdaptiveCardActions",
-                        spacing: actionSetStyle.spacing,
+                        spacing: actionSetConfiguration.spacing,
                         actions: adaptiveCard.actions
                     )
                 )
@@ -34,11 +34,11 @@
 
         var body: some View {
             VStack(spacing: 0) {
-                CardElementList(cardElements, padding: spacingStyle.padding)
+                CardElementList(cardElements, padding: spacingConfiguration.padding)
             }
             .frame(minHeight: adaptiveCard.minHeight?.cgFloatValue, alignment: .top)
             .backgroundImage(adaptiveCard.backgroundImage)
-            .background(containerColorStyle.backgroundColor(for: containerStyle))
+            .background(containerStyleConfiguration[containerStyle].backgroundColor)
             .selectAction(adaptiveCard.selectAction)
             .environment(\.locale, locale.updatingLanguageCode(adaptiveCard.lang))
         }

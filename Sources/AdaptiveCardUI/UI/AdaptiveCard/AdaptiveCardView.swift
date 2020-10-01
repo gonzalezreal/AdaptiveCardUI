@@ -15,11 +15,11 @@
     /// Before displaying the card, the view checks that its version is supported and downloads
     /// its content asynchronously.
     ///
-    /// ## Styling Adaptive Cards
+    /// ## Customizing Appearance
     ///
-    /// You can customize an adaptive card's appearance by providing a host config. A host config is a
-    /// set of configuration values that specify how the library renders the different elements. To set a
-    /// specific configuration for all the adaptive card images within a view, use the
+    /// You can customize an adaptive card's appearance by providing a configuration. An adaptive card
+    /// configuration is a set of values that specify how the library renders the different
+    /// elements. To set a specific configuration for all the adaptive cards within a view, use the
     /// `adaptiveCardConfiguration(_:)` modifier:
     ///
     ///     VStack {
@@ -29,17 +29,17 @@
     ///     .adaptiveCardConfiguration(myConfiguration)
     ///
     /// Alternatively, you can customize only a specific aspect of an adaptive card's appearance, like
-    /// the action styles or the different spacing values. Use one of the following modifiers to set a specific
-    /// style for all the adaptive cards within a view:
+    /// the actions or the different spacing values. Use one of the following modifiers to customize a
+    /// specific aspect of all the adaptive cards within a view:
     ///
-    /// * `actionSetStyle(_:)` to customize the appearance of the adaptive card actions.
-    /// * `containerColorStyle(_:)` to customize the colors of the different container styles.
-    /// * `factStyle(_:)` to customize the appearance of the fact set elements.
-    /// * `imageSizeStyle(_:)` to provide custom values for the different image size cases.
-    /// * `spacingStyle(_:)` to provide custom values for the different spacing cases.
-    /// * `textStyle(_:)` to provide custom fonts for the different font types and sizes.
+    /// * `actionSetConfiguration(_:)` to customize the appearance of the adaptive card actions.
+    /// * `containerStyleConfiguration(_:)` to customize the colors of the different container styles.
+    /// * `factSetConfiguration(_:)` to customize the appearance of the fact set elements.
+    /// * `imageSizeConfiguration(_:)` to provide custom values for the different image size cases.
+    /// * `spacingConfiguration(_:)` to provide custom values for the different spacing cases.
+    /// * `fontTypeConfiguration(_:)` to provide custom fonts for the different font types and sizes.
     ///
-    /// ## Custom elements
+    /// ## Custom Elements
     ///
     /// Adaptive cards are extensible, so you can add your own elements and the views that display them.
     ///

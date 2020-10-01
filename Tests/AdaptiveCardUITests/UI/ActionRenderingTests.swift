@@ -10,7 +10,7 @@
     final class ActionRenderingTests: XCTestCase {
         func testMaxActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(maxActions: 2))
+                .actionSetConfiguration(ActionSetConfiguration(maxActions: 2))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -22,7 +22,7 @@
 
         func testSpacing() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(spacing: .extraLarge))
+                .actionSetConfiguration(ActionSetConfiguration(spacing: .extraLarge))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -34,7 +34,7 @@
 
         func testHorizontalStretchActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(orientation: .horizontal))
+                .actionSetConfiguration(ActionSetConfiguration(actionsOrientation: .horizontal))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -46,7 +46,12 @@
 
         func testHorizontalLeftActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(orientation: .horizontal, alignment: .left))
+                .actionSetConfiguration(
+                    ActionSetConfiguration(
+                        actionsOrientation: .horizontal,
+                        actionAlignment: .left
+                    )
+                )
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -58,7 +63,12 @@
 
         func testHorizontalCenterActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(orientation: .horizontal, alignment: .center))
+                .actionSetConfiguration(
+                    ActionSetConfiguration(
+                        actionsOrientation: .horizontal,
+                        actionAlignment: .center
+                    )
+                )
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -70,7 +80,12 @@
 
         func testHorizontalRightActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(orientation: .horizontal, alignment: .right))
+                .actionSetConfiguration(
+                    ActionSetConfiguration(
+                        actionsOrientation: .horizontal,
+                        actionAlignment: .right
+                    )
+                )
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -82,7 +97,12 @@
 
         func testHorizontalButtonSpacing() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(orientation: .horizontal, buttonSpacing: 24))
+                .actionSetConfiguration(
+                    ActionSetConfiguration(
+                        actionsOrientation: .horizontal,
+                        buttonSpacing: 24
+                    )
+                )
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -94,7 +114,7 @@
 
         func testVerticalLeftActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(alignment: .left))
+                .actionSetConfiguration(ActionSetConfiguration(actionAlignment: .left))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -106,7 +126,7 @@
 
         func testVerticalCenterActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(alignment: .center))
+                .actionSetConfiguration(ActionSetConfiguration(actionAlignment: .center))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -118,7 +138,7 @@
 
         func testVerticalRightActions() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(alignment: .right))
+                .actionSetConfiguration(ActionSetConfiguration(actionAlignment: .right))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 
@@ -130,7 +150,7 @@
 
         func testVerticalButtonSpacing() {
             let view = AdaptiveCardView(url: fixtureURL("actions.json"))
-                .actionSetStyle(ActionSetStyle(buttonSpacing: 24))
+                .actionSetConfiguration(ActionSetConfiguration(buttonSpacing: 24))
                 .buttonStyle(CapsuleButtonStyle())
                 .animation(nil)
 

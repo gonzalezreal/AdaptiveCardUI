@@ -5,8 +5,8 @@
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct TextBlockView: View {
         @Environment(\.locale) private var locale
-        @Environment(\.textStyle) private var textStyle
-        @Environment(\.containerColorStyle) private var containerColorStyle
+        @Environment(\.fontTypeConfiguration) private var fontTypeConfiguration
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
         @Environment(\.containerStyle) private var containerStyle
 
         private let textBlock: TextBlock
@@ -18,9 +18,11 @@
         var body: some View {
             HAlign(textBlock.horizontalAlignment) {
                 Text(parsing: textBlock.text, locale: locale)
-                    .font(textStyle.font(textBlock.fontType, size: textBlock.size))
+                    .font(fontTypeConfiguration[textBlock.fontType][textBlock.size])
                     .fontWeight(Font.Weight(textBlock.weight))
-                    .foregroundColor(containerColorStyle.textColor(textBlock.color, isSubtle: textBlock.isSubtle, for: containerStyle))
+                    .foregroundColor(
+                        containerStyleConfiguration[containerStyle].textColors[textBlock.color, textBlock.isSubtle]
+                    )
                     .multilineTextAlignment(TextAlignment(textBlock.horizontalAlignment))
                     .lineLimit(textBlock.wrap ? textBlock.maxLines : 1)
                     .fixedSize(horizontal: false, vertical: true)

@@ -4,28 +4,28 @@
 
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct ContainerView: View {
-        @Environment(\.containerColorStyle) private var containerColorStyle
-        @Environment(\.spacingStyle) private var spacingStyle
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
+        @Environment(\.spacingConfiguration) private var spacingConfiguration
         @Environment(\.containerStyle) private var parentContainerStyle
 
         private let container: Container
 
         private var padding: CGFloat {
             if container.backgroundImage != nil {
-                return spacingStyle.padding
+                return spacingConfiguration.padding
             } else {
                 switch (container.style, parentContainerStyle) {
                 case (.none, _), (ContainerStyle.default, ContainerStyle.default):
                     return 0
                 case (.some, _):
-                    return spacingStyle.padding
+                    return spacingConfiguration.padding
                 }
             }
         }
 
         private var backgroundColor: Color? {
             container.style.flatMap {
-                containerColorStyle.backgroundColor(for: $0)
+                containerStyleConfiguration[$0].backgroundColor
             }
         }
 

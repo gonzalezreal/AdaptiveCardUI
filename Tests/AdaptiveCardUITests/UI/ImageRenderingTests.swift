@@ -22,7 +22,7 @@
         func testImage() {
             let view = AdaptiveCardView(url: fixtureURL("image.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -33,7 +33,7 @@
         func testBackgroundColor() {
             let view = AdaptiveCardView(url: fixtureURL("imageBackgroundColor.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -44,7 +44,7 @@
         func testHorizontalAlignment() {
             let view = AdaptiveCardView(url: fixtureURL("imageHorizontalAlignment.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -55,7 +55,7 @@
         func testWidthHeight() {
             let view = AdaptiveCardView(url: fixtureURL("imageWidthHeight.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -66,7 +66,7 @@
         func testSize() {
             let view = AdaptiveCardView(url: fixtureURL("imageSize.json"))
                 .animation(nil)
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 240, height: 600)
@@ -78,7 +78,7 @@
             let view = AdaptiveCardView(url: fixtureURL("imageCustomStyle.json"))
                 .animation(nil)
                 .onImageStyle(.rounded, apply: RoundedImageStyle())
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
@@ -90,7 +90,7 @@
             let view = AdaptiveCardView(url: fixtureURL("imageBackgroundColor.json"))
                 .animation(nil)
                 .onImageStyle(.default, apply: RoundedImageStyle())
-                .adaptiveCardConfiguration(HostConfig())
+                .adaptiveCardConfiguration(.test)
 
             let vc = UIHostingController(rootView: view)
             vc.view.frame = CGRect(x: 0, y: 0, width: 200, height: 200)

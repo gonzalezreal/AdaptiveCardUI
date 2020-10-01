@@ -4,8 +4,8 @@
 
     @available(macOS 11.0, iOS 14.0, tvOS 14.0, watchOS 7.0, *)
     struct ColumnView: View {
-        @Environment(\.spacingStyle) private var spacingStyle
-        @Environment(\.containerColorStyle) private var containerColorStyle
+        @Environment(\.spacingConfiguration) private var spacingConfiguration
+        @Environment(\.containerStyleConfiguration) private var containerStyleConfiguration
         @Environment(\.containerStyle) private var parentContainerStyle
 
         private let column: Column
@@ -42,20 +42,20 @@
     private extension ColumnView {
         var padding: CGFloat {
             if column.backgroundImage != nil {
-                return spacingStyle.padding
+                return spacingConfiguration.padding
             } else {
                 switch (column.style, parentContainerStyle) {
                 case (.none, _), (ContainerStyle.default, ContainerStyle.default):
                     return 0
                 case (.some, _):
-                    return spacingStyle.padding
+                    return spacingConfiguration.padding
                 }
             }
         }
 
         var backgroundColor: Color? {
             column.style.flatMap {
-                containerColorStyle.backgroundColor(for: $0)
+                containerStyleConfiguration[$0].backgroundColor
             }
         }
     }
