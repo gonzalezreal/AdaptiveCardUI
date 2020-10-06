@@ -14,3 +14,8 @@ test:
 	xcodebuild \
 			-scheme AdaptiveCardUI_watchOS \
 			-destination '$(DESTINATION_WATCHOS)'
+
+format:
+	swiftformat .
+
+.PHONY: format
