@@ -201,4 +201,41 @@ final class AdaptiveCardToggleVisibilityTests: XCTestCase {
         // then
         XCTAssertEqual(expected, adaptiveCard)
     }
+
+    func testImageSetItemToggleVisibilityUpdatesVisibility() {
+        // given
+        let targetElement = TargetElement(elementId: "imageToToggle")
+        var adaptiveCard = AdaptiveCard(
+            body: [
+                .imageSet(
+                    ImageSet(
+                        id: "someImageSet",
+                        images: [
+                            Image(id: "someId", url: URL(string: "https://example.com/image1.png")!),
+                            Image(id: targetElement.elementId, isVisible: false, url: URL(string: "https://example.com/image2.png")!),
+                        ]
+                    )
+                ),
+            ]
+        )
+        let expected = AdaptiveCard(
+            body: [
+                .imageSet(
+                    ImageSet(
+                        id: "someImageSet",
+                        images: [
+                            Image(id: "someId", url: URL(string: "https://example.com/image1.png")!),
+                            Image(id: targetElement.elementId, isVisible: true, url: URL(string: "https://example.com/image2.png")!),
+                        ]
+                    )
+                ),
+            ]
+        )
+
+        // when
+        adaptiveCard.toggleVisibility(of: [targetElement])
+
+        // then
+        XCTAssertEqual(expected, adaptiveCard)
+    }
 }

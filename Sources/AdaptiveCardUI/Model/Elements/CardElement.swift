@@ -24,6 +24,9 @@ public indirect enum CardElement {
     /// A series of facts (i.e. name / value pairs) in a tabular form.
     case factSet(FactSet)
 
+    /// A collection of images.
+    case imageSet(ImageSet)
+
     /// A custom card element.
     case custom(CustomCardElement)
 
@@ -56,6 +59,8 @@ extension CardElement: Codable {
             self = .columnSet(try ColumnSet(from: decoder))
         case String(describing: FactSet.self):
             self = .factSet(try FactSet(from: decoder))
+        case String(describing: ImageSet.self):
+            self = .imageSet(try ImageSet(from: decoder))
         default:
             if let decodeCustomCardElement = Self.customCardElementDecoders[type] {
                 self = .custom(try decodeCustomCardElement(decoder))
@@ -89,6 +94,9 @@ extension CardElement: Codable {
             try element.encode(to: encoder)
         case let .factSet(element):
             try container.encode(String(describing: FactSet.self), forKey: .type)
+            try element.encode(to: encoder)
+        case let .imageSet(element):
+            try container.encode(String(describing: ImageSet.self), forKey: .type)
             try element.encode(to: encoder)
         case let .custom(element):
             let typeName = type(of: element).typeName
@@ -125,6 +133,8 @@ public extension CardElement {
         case let .columnSet(element):
             return element[keyPath: keyPath]
         case let .factSet(element):
+            return element[keyPath: keyPath]
+        case let .imageSet(element):
             return element[keyPath: keyPath]
         case let .custom(element):
             return element[keyPath: keyPath]
@@ -173,6 +183,8 @@ extension CardElement: Equatable {
         case let (.columnSet(l), .columnSet(r)):
             return l == r
         case let (.factSet(l), .factSet(r)):
+            return l == r
+        case let (.imageSet(l), .imageSet(r)):
             return l == r
         case let (.custom(l), .custom(r)):
             let typeName = type(of: l).typeName

@@ -28,6 +28,8 @@ private extension CardElement {
                 [container.backgroundImage?.url].compactMap { $0 }
         case let .columnSet(columnSet):
             return columnSet.columns.flatMap(\.imageURLs)
+        case let .imageSet(imageSet):
+            return imageSet.images.map(\.url)
         }
     }
 }

@@ -61,6 +61,12 @@ extension SampleCard {
         resourceName: "FlightDetails.json"
     )
 
+    static let photos = SampleCard(
+        id: "Photos",
+        title: "Photos",
+        resourceName: "Photos.json"
+    )
+
     static let all: [SampleCard] = [
         .gitHubRepository,
         .activityUpdate,
@@ -71,5 +77,6 @@ extension SampleCard {
         .weatherCompact,
         .weatherLarge,
         .flightDetails,
+        .photos,
     ]
 }

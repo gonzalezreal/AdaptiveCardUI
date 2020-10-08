@@ -21,6 +21,13 @@ extension CardElement: Toggleable {
                 } else {
                     return false
                 }
+            case var .imageSet(imageSet):
+                if imageSet.images.toggleVisibility(of: target) {
+                    self = .imageSet(imageSet)
+                    return true
+                } else {
+                    return false
+                }
             case .textBlock, .image, .richTextBlock, .actionSet, .factSet, .custom, .unknown:
                 return false
             }
@@ -52,6 +59,9 @@ private extension CardElement {
         case var .factSet(element):
             element.toggleVisibility(isVisible)
             self = .factSet(element)
+        case var .imageSet(element):
+            element.toggleVisibility(isVisible)
+            self = .imageSet(element)
         case var .custom(element):
             element.toggleVisibility(isVisible)
             self = .custom(element)

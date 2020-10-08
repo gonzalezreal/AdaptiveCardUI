@@ -62,7 +62,7 @@
     private extension CardElement {
         var bleed: Bool {
             switch self {
-            case .textBlock, .image, .richTextBlock, .actionSet, .factSet, .custom:
+            case .textBlock, .image, .richTextBlock, .actionSet, .factSet, .imageSet, .custom:
                 return false
             case let .container(element):
                 return element.bleed

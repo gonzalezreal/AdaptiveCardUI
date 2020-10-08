@@ -26,6 +26,8 @@
                 ColumnSetView(columnSet)
             case let .factSet(factSet):
                 FactSetView(factSet)
+            case let .imageSet(imageSet):
+                ImageSetView(imageSet)
             case let .custom(customCardElement):
                 CustomCardElementView(customCardElement)
             default:

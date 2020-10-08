@@ -9,7 +9,7 @@ extension CardElement: FeatureAdaptable {
         }
 
         switch self {
-        case .textBlock, .image, .richTextBlock, .factSet, .custom:
+        case .textBlock, .image, .richTextBlock, .factSet, .imageSet, .custom:
             return self
         case var .actionSet(actionSet):
             var elementShouldFallback = false

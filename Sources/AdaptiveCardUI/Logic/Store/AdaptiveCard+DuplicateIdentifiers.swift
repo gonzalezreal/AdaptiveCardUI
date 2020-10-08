@@ -27,6 +27,8 @@ private extension CardElement {
             return [container.id] + container.items.flatMap(\.identifiers)
         case let .columnSet(columnSet):
             return [columnSet.id] + columnSet.columns.flatMap(\.identifiers)
+        case let .imageSet(imageSet):
+            return [imageSet.id] + imageSet.images.map(\.id)
         case .unknown:
             return []
         }

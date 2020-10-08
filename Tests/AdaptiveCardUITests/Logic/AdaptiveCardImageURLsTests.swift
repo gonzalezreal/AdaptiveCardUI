@@ -32,6 +32,11 @@ final class AdaptiveCardImageURLsTests: XCTestCase {
                         ]
                     )
                 ),
+                .imageSet(
+                    ImageSet(images: [
+                        Image(url: URL(string: "https://example.com/image4.png")!),
+                    ])
+                ),
             ],
             actions: [
                 .openURL(
@@ -69,6 +74,7 @@ final class AdaptiveCardImageURLsTests: XCTestCase {
             URL(string: "https://example.com/actionIcon1.png")!,
             URL(string: "https://example.com/image2.png")!,
             URL(string: "https://example.com/columnBackground.png")!,
+            URL(string: "https://example.com/image4.png")!,
             URL(string: "https://example.com/actionIcon2.png")!,
             URL(string: "https://example.com/image3.png")!,
             URL(string: "https://example.com/containerBackground.png")!,

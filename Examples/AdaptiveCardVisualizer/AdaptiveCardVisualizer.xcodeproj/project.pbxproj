@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82C107E8252F7CA60046764A /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 82C107E7252F7CA60046764A /* Photos.json */; };
+		82C107E9252F7CA60046764A /* Photos.json in Resources */ = {isa = PBXBuildFile; fileRef = 82C107E7252F7CA60046764A /* Photos.json */; };
 		9913B76B2514D5EC002C695C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7562514D5EC002C695C /* Assets.xcassets */; };
 		9913B76C2514D5EC002C695C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7562514D5EC002C695C /* Assets.xcassets */; };
 		9913B7822514D695002C695C /* ActivityUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 9913B7812514D695002C695C /* ActivityUpdate.json */; };
@@ -62,6 +64,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82C107E7252F7CA60046764A /* Photos.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Photos.json; sourceTree = "<group>"; };
 		9913B7562514D5EC002C695C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9913B75B2514D5EC002C695C /* AdaptiveCardVisualizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdaptiveCardVisualizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9913B75E2514D5EC002C695C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 				9913B7D92514F18F002C695C /* WeatherCompact.json */,
 				9913B7DE2514F458002C695C /* WeatherLarge.json */,
 				9913B7ED2514F6A8002C695C /* FlightDetails.json */,
+				82C107E7252F7CA60046764A /* Photos.json */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -311,6 +315,7 @@
 				9913B78A2514D6B5002C695C /* prism.js in Resources */,
 				9913B7D52514E065002C695C /* StockUpdate.json in Resources */,
 				9913B7822514D695002C695C /* ActivityUpdate.json in Resources */,
+				82C107E8252F7CA60046764A /* Photos.json in Resources */,
 				9913B7DF2514F458002C695C /* WeatherLarge.json in Resources */,
 				9913B78E2514D6B5002C695C /* okaidia.css in Resources */,
 				9913B7CB2514DB63002C695C /* FlightUpdate.json in Resources */,
@@ -331,6 +336,7 @@
 				9913B78B2514D6B5002C695C /* prism.js in Resources */,
 				9913B7D62514E065002C695C /* StockUpdate.json in Resources */,
 				9913B7832514D695002C695C /* ActivityUpdate.json in Resources */,
+				82C107E9252F7CA60046764A /* Photos.json in Resources */,
 				9913B7E02514F458002C695C /* WeatherLarge.json in Resources */,
 				9913B78F2514D6B5002C695C /* okaidia.css in Resources */,
 				9913B7CC2514DB63002C695C /* FlightUpdate.json in Resources */,
