@@ -71,13 +71,14 @@ Adaptive Cards can also have containers, which arrange a collection of child ele
 
 With just these few elements, you can design Adaptive Cards with quite complex layouts.
 
-![Screenshot](Examples/AdaptiveCardVisualizer/Screenshot.png)
+![iOSScreenshot](Examples/AdaptiveCardVisualizer/Screenshot.png)
+![MacOS Screenshot](Examples/AdaptiveCardVisualizer/ScreenshotMac.png)
 
 Adaptive Cards can collect form data using `Input` elements. AdaptiveCardUI can't render `Input` elements yet, but we plan to support them [soon](https://github.com/gonzalezreal/AdaptiveCardUI/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement).
 
 ### Learn More
 * Run the [AdaptiveCardVisualizer example](Examples/AdaptiveCardVisualizer)
-  * Requires Xcode 12 and Swift 5.3. If you want to try the macOS version, you will need to install macOS Big Sur 11 Beta 9 and Xcode 12.2 Beta 2.
+  * Requires Xcode 12 and Swift 5.3. If you want to try the macOS version, you will need to install macOS Big Sur 11 and Xcode 12.2.
 * [Browse sample cards](Examples/AdaptiveCardVisualizer/Cards)
 * Use the [Schema Explorer](https://adaptivecards.io/explorer) to browse the capabilities of the different elements
 
@@ -197,7 +198,7 @@ VStack {
 ```
 
 ## Compatibility
-AdaptiveCardUI requires Xcode 12 and Swift 5.3. It works on iOS 14.0 and later. If you want to try the macOS support, you will need to install macOS Big Sur 11 Beta 9 and Xcode 12.2 Beta 2.
+AdaptiveCardUI requires Xcode 12 and Swift 5.3. It works on iOS 14.0 and later. If you want to try the macOS support, you will need to install macOS Big Sur 11 and Xcode 12.2.
 
 ## Installation
 You can add AdaptiveCardUI to an Xcode project by adding it as a package dependency.
