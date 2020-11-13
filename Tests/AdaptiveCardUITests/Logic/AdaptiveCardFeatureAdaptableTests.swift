@@ -21,7 +21,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [],
@@ -58,7 +58,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3)
         )
@@ -100,7 +100,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -141,7 +141,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -193,7 +193,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [],
@@ -247,7 +247,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [],
@@ -295,7 +295,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -346,7 +346,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -401,7 +401,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -462,7 +462,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -526,7 +526,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [
@@ -611,7 +611,7 @@ final class AdaptiveCardFeatureAdaptableTests: XCTestCase {
             }
           ]
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let expected = AdaptiveCard(
             version: SemanticVersion(major: 1, minor: 3),
             body: [

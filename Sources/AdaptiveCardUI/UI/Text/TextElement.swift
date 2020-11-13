@@ -34,8 +34,8 @@ extension TextElement {
             lastIndex = range.upperBound
 
             guard let funcRange = Range(match.range(withName: "func"), in: input),
-                let dateRange = Range(match.range(withName: "date"), in: input),
-                let date = ISO8601DateFormatter.withInternetDateTime.date(from: String(input[dateRange]))
+                  let dateRange = Range(match.range(withName: "date"), in: input),
+                  let date = ISO8601DateFormatter.withInternetDateTime.date(from: String(input[dateRange]))
             else {
                 let text = String(input[range])
                 result.append(.plain(text))

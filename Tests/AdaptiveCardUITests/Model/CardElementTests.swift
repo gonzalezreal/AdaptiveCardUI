@@ -241,7 +241,7 @@ final class CardElementTests: XCTestCase {
           ],
           "type" : "ActionSet"
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
 

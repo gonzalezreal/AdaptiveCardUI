@@ -131,7 +131,7 @@ final class TextRunTests: XCTestCase {
           "type" : "TextRun",
           "weight" : "bolder"
         }
-        """# .data(using: .utf8)!
+        """#.data(using: .utf8)!
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
 

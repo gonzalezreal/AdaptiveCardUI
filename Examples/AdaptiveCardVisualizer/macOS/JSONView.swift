@@ -10,8 +10,8 @@ struct JSONView: NSViewRepresentable {
 
     func updateNSView(_ nsView: WKWebView, context: Context) {
         guard let url = Bundle.main.url(forResource: resourceName, withExtension: nil),
-            let data = try? Data(contentsOf: url),
-            let json = String(data: data, encoding: .utf8)
+              let data = try? Data(contentsOf: url),
+              let json = String(data: data, encoding: .utf8)
         else {
             return
         }

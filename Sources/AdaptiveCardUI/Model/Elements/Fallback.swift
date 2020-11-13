@@ -19,7 +19,7 @@ extension Fallback: Codable where Element: Codable {
         let container = try decoder.singleValueContainer()
 
         if let fallbackOption = try? container.decode(String.self),
-            fallbackOption.caseInsensitiveCompare(Constants.drop) == .orderedSame
+           fallbackOption.caseInsensitiveCompare(Constants.drop) == .orderedSame
         {
             self = .drop
         } else if let element = try? container.decode(Element.self) {
@@ -43,8 +43,8 @@ extension Fallback: Codable where Element: Codable {
     }
 }
 
-extension Fallback where Element: Equatable & Codable {
-    public enum None: DefaultValueProvider {
+public extension Fallback where Element: Equatable & Codable {
+    enum None: DefaultValueProvider {
         public static var `default`: Fallback { .none }
     }
 }
