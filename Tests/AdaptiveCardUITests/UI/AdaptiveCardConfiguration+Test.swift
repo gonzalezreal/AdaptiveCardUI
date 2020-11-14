@@ -1,4 +1,4 @@
-#if os(iOS) && canImport(SwiftUI)
+#if SNAPSHOT_TESTS
 
     import AdaptiveCardUI
     import SwiftUI
