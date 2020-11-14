@@ -15,7 +15,11 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode_12.2.app
       - name: Run tests
         run: make test
+  snapshot-tests:
+    runs-on: macOS-10.15
+    steps:
+      - uses: actions/checkout@v2
       - name: Select Xcode 12
         run: sudo xcode-select -s /Applications/Xcode_12.app
       - name: Run snapshot tests
-        run: make snapshot-test-ios      
+        run: make snapshot-test-ios
