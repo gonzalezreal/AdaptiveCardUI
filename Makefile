@@ -1,6 +1,6 @@
 DESTINATION_MACOS = platform=macOS
 DESTINATION_IOS = platform=iOS Simulator,name=iPhone 8
-DESTINATION_IOS_SNAPSHOT = platform=iOS Simulator,OS=14.1,name=iPhone 8
+DESTINATION_IOS_SNAPSHOT = platform=iOS Simulator,OS=14.0,name=iPhone 8
 DESTINATION_TVOS = platform=tvOS Simulator,name=Apple TV
 
 default: test
