@@ -2,10 +2,11 @@ DESTINATION_MACOS = platform=macOS
 DESTINATION_IOS = platform=iOS Simulator,name=iPhone 8
 DESTINATION_IOS_SNAPSHOT = platform=iOS Simulator,OS=14.0,name=iPhone 8
 DESTINATION_TVOS = platform=tvOS Simulator,name=Apple TV
+DESTINATION_WATCHOS = generic/platform=watchOS
 
 default: test
 
-test: test-macos test-ios test-tvos
+test: test-macos test-ios test-tvos watchos
 
 test-macos:
 	xcodebuild test \
@@ -27,6 +28,11 @@ test-tvos:
 	xcodebuild test \
 			-scheme AdaptiveCardUI \
 			-destination '$(DESTINATION_TVOS)'
+
+watchos:
+	xcodebuild \
+			-scheme AdaptiveCardUI_watchOS \
+			-destination '$(DESTINATION_WATCHOS)'
 
 format:
 	swiftformat .

@@ -20,7 +20,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/gonzalezreal/DefaultCodable", from: "1.2.0"),
         .package(url: "https://github.com/gonzalezreal/AnyValue", from: "1.0.0"),
-        .package(url: "https://github.com/gonzalezreal/NetworkImage", from: "1.1.0"),
+        .package(url: "https://github.com/gonzalezreal/NetworkImage", from: "1.1.1"),
         .package(url: "https://github.com/pointfreeco/combine-schedulers", from: "0.1.2"),
         .package(name: "SnapshotTesting", url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.8.1"),
     ],
