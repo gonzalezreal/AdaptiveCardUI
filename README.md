@@ -1,7 +1,7 @@
 # AdaptiveCardUI
 [![CI](https://github.com/gonzalezreal/AdaptiveCardUI/workflows/CI/badge.svg)](https://github.com/gonzalezreal/AdaptiveCardUI/actions?query=workflow%3ACI)
 ![Swift 5.3](https://img.shields.io/badge/Swift-5.3-blue.svg)
-![Platforms](https://img.shields.io/badge/Platforms-macOS%20|%20iOS%20|%20tvOS%20|%20watchOS-blue.svg?style=flat)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fgonzalezreal%2FAdaptiveCardUI%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/gonzalezreal/AdaptiveCardUI)
 [![Twitter: @gonzalezreal](https://img.shields.io/badge/twitter-@gonzalezreal-blue.svg?style=flat)](https://twitter.com/gonzalezreal)
 
 AdaptiveCardUI is a library for rendering Adaptive Cards in SwiftUI.
