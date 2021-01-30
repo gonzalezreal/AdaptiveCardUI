@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import Combine
     import SwiftUI
 

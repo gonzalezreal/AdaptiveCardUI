@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import SwiftUI
 
     /// A font type configuration specifies the different fonts for each font type.

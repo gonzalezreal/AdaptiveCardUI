@@ -1,3 +1,4 @@
+import AdaptiveCard
 import Foundation
 
 extension Image: Toggleable {

@@ -10,28 +10,28 @@ test: test-macos test-ios test-tvos watchos
 
 test-macos:
 	xcodebuild test \
-			-scheme AdaptiveCardUI \
+			-scheme AdaptiveCardUI-Package \
 			-destination '$(DESTINATION_MACOS)'
 
 test-ios:
 	xcodebuild test \
-			-scheme AdaptiveCardUI \
+			-scheme AdaptiveCardUI-Package \
 			-destination '$(DESTINATION_IOS)'
 
 snapshot-test-ios:
 	xcodebuild test \
-			-scheme AdaptiveCardUI \
+			-scheme AdaptiveCardUI-Package \
 			-destination '$(DESTINATION_IOS_SNAPSHOT)' \
 			'OTHER_SWIFT_FLAGS=-D SNAPSHOT_TESTS'
 
 test-tvos:
 	xcodebuild test \
-			-scheme AdaptiveCardUI \
+			-scheme AdaptiveCardUI-Package \
 			-destination '$(DESTINATION_TVOS)'
 
 watchos:
 	xcodebuild \
-			-scheme AdaptiveCardUI_watchOS \
+			-scheme AdaptiveCardUI-Package-watchOS \
 			-destination '$(DESTINATION_WATCHOS)'
 
 format:

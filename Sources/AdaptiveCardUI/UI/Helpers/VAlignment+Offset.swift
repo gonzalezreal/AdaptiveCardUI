@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import SwiftUI
 
     @available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 6.0, *)

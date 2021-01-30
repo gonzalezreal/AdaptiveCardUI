@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import SwiftUI
 
     /// Controls behavior and styling of `showCard` actions.

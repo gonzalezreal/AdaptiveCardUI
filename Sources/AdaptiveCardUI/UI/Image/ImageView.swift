@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import struct AdaptiveCard.Image
     import NetworkImage
     import SwiftUI
 

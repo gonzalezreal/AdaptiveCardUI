@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import SwiftUI
 
     /// A container style configuration specifies the configuration values for the different container styles.

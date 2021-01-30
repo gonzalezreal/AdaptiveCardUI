@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import SwiftUI
 
     /// Specifies how much spacing should be used for the various spacing options inside

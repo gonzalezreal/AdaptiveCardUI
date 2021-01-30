@@ -1,4 +1,4 @@
-import AdaptiveCardUI
+import AdaptiveCard
 import XCTest
 
 final class TextRunTests: XCTestCase {

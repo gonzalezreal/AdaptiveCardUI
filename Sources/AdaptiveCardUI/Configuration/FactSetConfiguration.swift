@@ -1,5 +1,6 @@
 #if canImport(SwiftUI)
 
+    import AdaptiveCard
     import SwiftUI
 
     /// A set of values that control the appearance of fact sets inside adaptive cards.

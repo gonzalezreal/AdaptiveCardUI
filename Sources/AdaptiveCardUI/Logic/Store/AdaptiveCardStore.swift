@@ -1,5 +1,6 @@
 #if canImport(Combine)
 
+    import AdaptiveCard
     import Combine
     import CombineSchedulers
     import Foundation

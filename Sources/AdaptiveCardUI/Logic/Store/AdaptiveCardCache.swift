@@ -1,3 +1,4 @@
+import AdaptiveCard
 import Foundation
 
 protocol AdaptiveCardCache: AnyObject {

@@ -1,7 +1,19 @@
-import AdaptiveCardUI
+import AdaptiveCard
+import DefaultCodable
 import XCTest
 
 final class CardElementTests: XCTestCase {
+    struct Custom: CustomCardElement, Codable, Equatable {
+        @ItemIdentifier var id: String
+        @Default<True> var isVisible: Bool
+        @Default<False> var separator: Bool
+        @Default<FirstCase> var spacing: Spacing
+        @Default<Fallback.None> var fallback: Fallback<CardElement>
+        @Default<EmptyDictionary> var requires: [String: SemanticVersion]
+
+        var foo: String
+    }
+
     func testTextBlockDecodeReturnsTextBlockCardElement() throws {
         // given
         let json = """
@@ -407,16 +419,16 @@ final class CardElementTests: XCTestCase {
 
     func testCustomCardElementDecodeReturnsCustomCardElement() throws {
         // given
-        CardElement.register(StarCount.self)
+        CardElement.register(Custom.self)
         let json = """
         {
           "id": "42",
-          "type": "StarCount",
-          "value": 2712
+          "type": "Custom",
+          "foo": "bar"
         }
         """.data(using: .utf8)!
         let expected = CardElement.custom(
-            StarCount(id: "42", value: 2712)
+            Custom(id: "42", foo: "bar")
         )
 
         // when
@@ -429,15 +441,15 @@ final class CardElementTests: XCTestCase {
     @available(macOS 10.13, iOS 11.0, tvOS 11.0, *)
     func testCustomCardElementEncodeReturnsExpectedJSON() throws {
         // given
-        CardElement.register(StarCount.self)
+        CardElement.register(Custom.self)
         let cardElement = CardElement.custom(
-            StarCount(id: "42", value: 2712)
+            Custom(id: "42", foo: "bar")
         )
         let expected = """
         {
+          "foo" : "bar",
           "id" : "42",
-          "type" : "StarCount",
-          "value" : 2712
+          "type" : "Custom"
         }
         """.data(using: .utf8)!
         let encoder = JSONEncoder()

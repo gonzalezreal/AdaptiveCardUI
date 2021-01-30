@@ -8,10 +8,14 @@ let package = Package(
     platforms: [
         .macOS(.v10_12),
         .iOS(.v11),
-        .tvOS(.v10),
+        .tvOS(.v11),
         .watchOS(.v3),
     ],
     products: [
+        .library(
+            name: "AdaptiveCard",
+            targets: ["AdaptiveCard"]
+        ),
         .library(
             name: "AdaptiveCardUI",
             targets: ["AdaptiveCardUI"]
@@ -26,10 +30,22 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "AdaptiveCardUI",
+            name: "AdaptiveCard",
             dependencies: [
                 "DefaultCodable",
                 "AnyValue",
+            ]
+        ),
+        .testTarget(
+            name: "AdaptiveCardTests",
+            dependencies: [
+                "AdaptiveCard",
+            ]
+        ),
+        .target(
+            name: "AdaptiveCardUI",
+            dependencies: [
+                "AdaptiveCard",
                 "NetworkImage",
                 .product(name: "CombineSchedulers", package: "combine-schedulers"),
             ]

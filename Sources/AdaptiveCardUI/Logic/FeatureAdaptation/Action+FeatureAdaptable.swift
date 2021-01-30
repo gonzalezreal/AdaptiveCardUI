@@ -1,5 +1,6 @@
 // swiftformat:options --self insert
 
+import AdaptiveCard
 import Foundation
 
 extension Action: FeatureAdaptable {
