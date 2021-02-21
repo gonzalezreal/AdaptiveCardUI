@@ -2,39 +2,12 @@
   "object": {
     "pins": [
       {
-        "package": "AnyValue",
-        "repositoryURL": "https://github.com/gonzalezreal/AnyValue",
+        "package": "cmark",
+        "repositoryURL": "https://github.com/SwiftDocOrg/swift-cmark.git",
         "state": {
           "branch": null,
-          "revision": "15a662df9f5bb6c7aa45839acb2137da99a22665",
-          "version": "1.0.0"
-        }
-      },
-      {
-        "package": "combine-schedulers",
-        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
-        "state": {
-          "branch": null,
-          "revision": "ff42ec9061d864de7982162011321d3df5080c10",
-          "version": "0.1.2"
-        }
-      },
-      {
-        "package": "DefaultCodable",
-        "repositoryURL": "https://github.com/gonzalezreal/DefaultCodable",
-        "state": {
-          "branch": null,
-          "revision": "7417376ad1228c3ac5c2988770c9fe97ca667a57",
-          "version": "1.2.0"
-        }
-      },
-      {
-        "package": "NetworkImage",
-        "repositoryURL": "https://github.com/gonzalezreal/NetworkImage",
-        "state": {
-          "branch": null,
-          "revision": "de0632e94acbebe35d78e2f1670398a18f8ac243",
-          "version": "1.1.1"
+          "revision": "9c8096a23f44794bde297452d87c455fc4f76d42",
+          "version": "0.29.0+20210102.9c8096a"
         }
       },
       {
@@ -44,6 +17,24 @@
           "branch": null,
           "revision": "c466812aa2e22898f27557e2e780d3aad7a27203",
           "version": "1.8.2"
+        }
+      },
+      {
+        "package": "SwiftAdaptiveCards",
+        "repositoryURL": "https://github.com/gonzalezreal/SwiftAdaptiveCards",
+        "state": {
+          "branch": "main",
+          "revision": "fb39bcfe3c01a7af3b92f877052ab8c27121fbca",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftCommonMark",
+        "repositoryURL": "https://github.com/gonzalezreal/SwiftCommonMark",
+        "state": {
+          "branch": null,
+          "revision": "9698a3049b1fdbf64c73c75cd2ab86042d8a0f37",
+          "version": "0.1.0"
         }
       }
     ]
