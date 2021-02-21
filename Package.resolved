@@ -2,6 +2,42 @@
   "object": {
     "pins": [
       {
+        "package": "AttributedText",
+        "repositoryURL": "https://github.com/gonzalezreal/AttributedText",
+        "state": {
+          "branch": null,
+          "revision": "bf076de48dbb2172525486936d512e1bba062642",
+          "version": "0.3.0"
+        }
+      },
+      {
+        "package": "combine-schedulers",
+        "repositoryURL": "https://github.com/pointfreeco/combine-schedulers",
+        "state": {
+          "branch": null,
+          "revision": "8eab6ad841ccc420f29f3e77e17e7b260841b50a",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "MarkdownUI",
+        "repositoryURL": "https://github.com/gonzalezreal/MarkdownUI",
+        "state": {
+          "branch": null,
+          "revision": "e8931e37dcf777b4c03ca76aa09c10cf246a2ced",
+          "version": "0.5.1"
+        }
+      },
+      {
+        "package": "NetworkImage",
+        "repositoryURL": "https://github.com/gonzalezreal/NetworkImage",
+        "state": {
+          "branch": null,
+          "revision": "15582b821cb097012b41b83d6219717926ec4ed6",
+          "version": "2.1.0"
+        }
+      },
+      {
         "package": "cmark",
         "repositoryURL": "https://github.com/SwiftDocOrg/swift-cmark.git",
         "state": {
@@ -24,7 +60,7 @@
         "repositoryURL": "https://github.com/gonzalezreal/SwiftAdaptiveCards",
         "state": {
           "branch": "main",
-          "revision": "fb39bcfe3c01a7af3b92f877052ab8c27121fbca",
+          "revision": "cd8505e812a678cd7bd30849924b42aa07ea814e",
           "version": null
         }
       },
@@ -33,8 +69,8 @@
         "repositoryURL": "https://github.com/gonzalezreal/SwiftCommonMark",
         "state": {
           "branch": null,
-          "revision": "9698a3049b1fdbf64c73c75cd2ab86042d8a0f37",
-          "version": "0.1.0"
+          "revision": "f1575c37110a386e50da3208a04266b398bcefaa",
+          "version": "0.1.1"
         }
       }
     ]

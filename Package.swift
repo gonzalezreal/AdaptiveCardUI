@@ -17,7 +17,14 @@ let package = Package(
         ),
     ],
     dependencies: [
-        .package(url: "https://github.com/gonzalezreal/SwiftAdaptiveCards", .branch("main")),
+        .package(
+            url: "https://github.com/gonzalezreal/SwiftAdaptiveCards",
+            .branch("main")
+        ),
+        .package(
+            url: "https://github.com/gonzalezreal/MarkdownUI",
+            from: "0.5.1"
+        ),
         .package(
             name: "SnapshotTesting",
             url: "https://github.com/pointfreeco/swift-snapshot-testing",
@@ -29,6 +36,7 @@ let package = Package(
             name: "AdaptiveCardUI",
             dependencies: [
                 .product(name: "AdaptiveCards", package: "SwiftAdaptiveCards"),
+                "MarkdownUI"
             ]
         ),
         .testTarget(
