@@ -36,7 +36,7 @@ let package = Package(
             name: "AdaptiveCardUI",
             dependencies: [
                 .product(name: "AdaptiveCards", package: "SwiftAdaptiveCards"),
-                "MarkdownUI"
+                "MarkdownUI",
             ]
         ),
         .testTarget(
